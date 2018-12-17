@@ -1,0 +1,31 @@
+ <!-- FAST CONNTACT -->
+    <button id="contactMOJ" type="button" class="btn btn-block" data-toggle="modal" data-target="#myModal2"><h2><i class="fa fa-pencil-square-o" style="font-size:36px"></i> Connect with us <strong>FAST</strong></h2></button>
+
+    <!-- The Modal -->
+    <div class="modal" id="myModal2">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Connect with us <strong>FAST</strong></h4>
+                    <button id="zatvori" type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <label for="emailac">Your email</label><br>
+                    <input type="email" class="form-control" id="emailac"><br>
+
+                    <label for="textac">Write us a message</label>
+                    <textarea class="form-control" style="resize: none; width: 100%" name="" id="textac" cols="30" rows="10"></textarea><br>
+
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="submit" id="fast" class="btn btn-block "><strong>Send</strong></button>
+                </div>
+            </div>
+        </div>
+    </div>

@@ -1,0 +1,10 @@
+    <!-- JUMBOTRON -->
+    <div id="aboutMOJ" class="jumbotron">
+        <br><br>
+        <h1>Beginnings</h1><br>
+        <p>Donec quis libero metus. Phasellus sit amet libero condimentum, faucibus nisi vitae, facilisis elit. Integer lacinia nisi quis lacus imperdiet lobortis. Curabitur in tristique felis. Fusce ipsum nisi, gravida vel blandit vel, scelerisque in tortor.
+            <br> <br> Morbi tincidunt praesent ultrices ligula ac diam varius consectetur mauris commodo sagittis egestas.Curabitur in tristique felis. Fusce ipsum nisi, gravida vel blandit vel, scelerisque in tortor. Praesent ultrices ligula ac diam
+            varius consectetur id nec leo.Curabitur in tristique felis. Fusce ipsum nisi, gravida vel blandit vel, scelerisque in tortor. <br> <br> Donec quis libero metus. Phasellus sit amet libero condimentum, faucibus nisi vitae, facilisis elit. Integer
+            lacinia nisi quis lacus imperdiet lobortis. Curabitur in tristique felis. Fusce ipsum nisi, gravida vel blandit vel, scelerisque in tortor.
+        </p>
+    </div>

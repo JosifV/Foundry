@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="stil/css/main2.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <nav id="navMOJ" class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <a class="navbar-brand" href="index.html"><i style="font-size:24px" class="fa">&#xf015;</i></a>
+        <button class="navbar-toggler container2" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" onclick="xFunc(this)">
+               
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </button>
+
+        <div id="navbarNavDropdown" class="navbar-collapse collapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="beginnings.html">Beginnings</a>
+                </li>
+                <li class=" dropdown">
+                    <a class="nav-link  dropbtn" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Pricing & Orders <i style="font-size:24px" class="fa">&#xf0dd;</i>
+                            </a>
+                    <div class=" dropdown-content" aria-labelledby="navbarDropdownMenuLink">
+                        <a id="hoverac" class="dropdown-item" href="#">Copper</a>
+                        <a class="dropdown-item" href="#">Steel</a>
+                        <a class="dropdown-item" href="#">Silver</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Our workers</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Connect with us</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" target="_blank" href="https://www.youtube.com/"><i style="font-size:24px" class="fa">&#xf166;</i> Youtube</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" target="_blank" href="https://www.google.com/"><i style="font-size:24px" class="fa">&#xf2b3;</i> Google+</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" target="_blank" href="https://www.linkedin.com/"><i style="font-size:24px" class="fa">&#xf08c;</i> Linkedin</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="btn download">Download App</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- JUMBOTRON -->
+    <div id="aboutMOJ" class="jumbotron">
+        <br><br>
+        <h1>Beginnings</h1><br>
+        <p>Donec quis libero metus. Phasellus sit amet libero condimentum, faucibus nisi vitae, facilisis elit. Integer lacinia nisi quis lacus imperdiet lobortis. Curabitur in tristique felis. Fusce ipsum nisi, gravida vel blandit vel, scelerisque in tortor.
+            <br> <br> Morbi tincidunt praesent ultrices ligula ac diam varius consectetur mauris commodo sagittis egestas.Curabitur in tristique felis. Fusce ipsum nisi, gravida vel blandit vel, scelerisque in tortor. Praesent ultrices ligula ac diam
+            varius consectetur id nec leo.Curabitur in tristique felis. Fusce ipsum nisi, gravida vel blandit vel, scelerisque in tortor. <br> <br> Donec quis libero metus. Phasellus sit amet libero condimentum, faucibus nisi vitae, facilisis elit. Integer
+            lacinia nisi quis lacus imperdiet lobortis. Curabitur in tristique felis. Fusce ipsum nisi, gravida vel blandit vel, scelerisque in tortor.
+        </p>
+    </div>
+    <!-- ABOUT US -->
+    <div id="aboutMOJ" class="container-fluid">
+        <br>
+        <h3>About us</h3>
+        <br>
+        <p>Donec quis libero metus. Phasellus sit amet libero condimentum, faucibus nisi vitae, facilisis elit. Integer lacinia nisi quis lacus imperdiet lobortis. Curabitur in tristique felis. Fusce ipsum nisi, gravida vel blandit vel, scelerisque in tortor.
+            Morbi tincidunt praesent ultrices ligula ac diam varius consectetur mauris commodo sagittis egestas.Curabitur in tristique felis. Fusce ipsum nisi, gravida vel blandit vel, scelerisque in tortor. Praesent ultrices ligula ac diam varius consectetur
+            id nec leo.Curabitur in tristique felis. Fusce ipsum nisi, gravida vel blandit vel, scelerisque in tortor.
+        </p>
+        <br>
+    </div>
+    <!-- SOMETHING ELSE -->
+    <div id="aboutMOJ2" class="container-fluid">
+
+        <h3>Something else</h3>
+        <br>
+        <p>Donec quis libero metus. Phasellus sit amet libero condimentum, faucibus nisi vitae, facilisis elit. Integer lacinia nisi quis lacus imperdiet lobortis. Curabitur in tristique felis. Fusce ipsum nisi, gravida vel blandit vel, scelerisque in tortor.
+            Morbi tincidunt mauris commodo sagittis egestas. Praesent ultrices ligula, a venenatis quam gravida. Suspendisse mollis, lorem id ornare consequat, justo magna egestas tortor, sit amet lobortis augue nisi ac mi. Aliquam interdum enim eu lorem
+            tempus volutpat. Integer quis sapien. Nullam fermentum, lorem a vehicula lobortis, tortor sapien aliquet ipsum, nec sodales risus magna ac ligula. Phasellus eget est ac diam varius consectetur id nec leo.
+        </p>
+        <br>
+    </div>
+    <!-- HISTORY -->
+    <div class="container-fluid">
+
+    </div>
+    <!-- GLYPHS -->
+    <div id="glifMOJ" class="container-fluid"><br>
+        <div class="row slideanim">
+            <div class="col-md-4"><a href="javascript.void(0)" data-toggle="tooltip" data-placement="right" title="Donec quis libero metus. Phasellus sit amet libero condimentum, faucibus nisi vitae, facilisis elit."><i style="font-size:44px" class="fa">&#xf085;</i><br> Cooperative</a></div>
+            <div class="col-md-4"><a href="javascript.void(0)" data-toggle="tooltip" data-placement="right" title="Donec quis libero metus. Phasellus sit amet libero condimentum, faucibus nisi vitae, facilisis elit."><i style="font-size:44px" class="fa">&#xf275;</i><br> Industrious</a></div>
+            <div class="col-md-4">
+                <a href="javascript.void(0)" data-toggle="tooltip" data-placement="right" title="Donec quis libero metus. Phasellus sit amet libero condimentum, faucibus nisi vitae, facilisis elit. Donec quis libero metus."><i style="font-size:44px" class="fa">&#xf1bb;</i><br> Eco Friendly</a>
+            </div>
+        </div>
+        <br><br>
+        <div class="row slideanim">
+            <div class="col-md-4">
+                <a href="javascript.void(0)" data-toggle="tooltip" data-placement="right" title="Phasellus sit amet libero condimentum, faucibus nisi vitae, facilisis elit."><i style="font-size:44px" class="fa">&#xf0d1;</i><br> Fast Delivery</a>
+            </div>
+            <div class="col-md-4">
+                <a href="javascript.void(0)" data-toggle="tooltip" data-placement="right" title="Donec quis libero metus. Phasellus sit amet libero condimentum, faucibus nisi vitae, facilisis elit."><i style="font-size:44px" class="fa">&#xf14a;</i><br> Proven</a>
+            </div>
+            <div class="col-md-4">
+                <a href="javascript.void(0)" data-toggle="tooltip" data-placement="right" title="Phasellus sit amet libero condimentum, faucibus nisi vitae, facilisis elit. Donec quis libero metus. "><i style="font-size:44px" class="fa">&#xf023;</i><br> Safe Business</a>
+            </div>
+        </div><br>
+    </div>
+    <!-- SOMETHING ELSE -->
+    <div id="aboutMOJ" class="container-fluid">
+        <br><br>
+        <h3>Something else</h3>
+        <br>
+        <p>Donec quis libero metus. Phasellus sit amet libero condimentum, faucibus nisi vitae, facilisis elit. Integer lacinia nisi quis lacus imperdiet lobortis. Curabitur in tristique felis. Fusce ipsum nisi, gravida vel blandit vel, scelerisque in tortor.
+            Morbi tincidunt mauris commodo sagittis egestas. Praesent ultrices ligula, a venenatis quam gravida. Suspendisse mollis, lorem id ornare consequat, justo magna egestas tortor, sit amet lobortis augue nisi ac mi. Aliquam interdum enim eu lorem
+            tempus volutpat. Integer quis sapien. Nullam fermentum, lorem a vehicula lobortis, tortor sapien aliquet ipsum, nec sodales risus magna ac ligula. Phasellus eget est ac diam varius consectetur id nec leo.
+        </p>
+        <br>
+    </div>
+
+    <!-- FAST CONNTACT -->
+    <button id="contactMOJ" type="button" class="btn btn-block" data-toggle="modal" data-target="#myModal"><h2><i class="fa fa-pencil-square-o" style="font-size:36px"></i> Connect with us <strong>FAST</strong></h2></button>
+
+    <!-- The Modal -->
+    <div class="modal" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Connect with us <strong>FAST</strong></h4>
+                    <button id="zatvori" type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <label for="emailac">Your email</label><br>
+                    <input type="email" class="form-control" id="emailac"><br>
+
+                    <label for="textac">Write us a message</label>
+                    <textarea class="form-control" style="resize: none; width: 100%" name="" id="textac" cols="30" rows="10"></textarea><br>
+
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="submit" id="fast" class="btn btn-block "><strong>Send</strong></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="iksic.js"></script>
+    <script src="main.js"></script>
+    <script src="skrol.js"></script>
+    <script src="tuttip.js"></script>
+
+</body>
+
+</html>

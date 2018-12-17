@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="stil/css/main4.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <nav id="navMOJ" class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <a class="navbar-brand" href="index.html"><i style="font-size:24px" class="fa">&#xf015;</i></a>
+        <button class="navbar-toggler container2" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" onclick="xFunc(this)">
+                   
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </button>
+
+        <div id="navbarNavDropdown" class="navbar-collapse collapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="beginnings.html">Beginnings</a>
+                </li>
+                <li class=" dropdown">
+                    <a class="nav-link " href="pricing.html"> Pricing & Orders </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="workers.html">Our workers</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Connect with us</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav">
+                <li class=" dropdown nav-item">
+                    <a class="nav-link dropbtn " href="" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Language <i style="font-size:24px" class="fa">&#xf0dd;</i></a>
+                    <div class=" dropdown-content" aria-labelledby="navbarDropdownMenuLink">
+                        <a id="hoverac" class="dropdown-item" href="#">Language 1</a>
+                        <a class="dropdown-item" href="#">Language 2</a>
+                        <a class="dropdown-item" href="#">Language 3</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <button class="btn download">Download App</button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- JUMBOTRON -->
+    <div id="jumbacMOJ" style="padding-top: 75px">
+        <h1>Connect with us</h1>
+        <p>Quod voluptate, obcaecati aliquid delectus mollitia quaerat, porro cupiditate maiores architecto animi accusamus eveniet? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam ad magni pariatur sequi, mollitia dolorem neque? Quod voluptate,
+            obcaecati aliquid delectus mollitia quaerat, porro cupiditate maiores architecto animi accusamus eveniet</p>
+        <ul>
+            <li><a href="#">Something</a></li>
+            <li><a href="#">Something</a></li>
+            <li><a href="#">Something</a></li>
+            <li><a href="#">Something</a></li>
+        </ul>
+        <p>Quod voluptate, obcaecati aliquid delectus mollitia quaerat, porro cupiditate maiores architecto animi accusamus eveniet? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam ad magni pariatur sequi, mollitia dolorem neque? Quod voluptate,
+            obcaecati aliquid delectus mollitia quaerat, porro cupiditate maiores architecto animi accusamus eveniet?</p>
+        <br>
+    </div>
+
+    <!-- ADDRESS AND CONTACT -->
+    <div class="row">
+        <div class="col-md-12">
+            <a id="colapseMOJ" href="#" class="btn" data-toggle="collapse" data-target="#demo1">Shipment Address:</a>
+            <div id="demo1" class="collapse">
+                <div class="row">
+                    <div class="col-md-8">
+                        <h3>Shipment Address:</h3> <br> Lorem ipsum dolor sit amet 12 500 Dolor street 35/8. <br><br> Ipsum dolor sit amet 14 870 Something street 63/9. <br><br>Lorem ipsum dolor sit amet 12 500 Dolor street 35/8. <br><br> Ipsum dolor sit
+                        amet 14 870 Something
+                    </div>
+                    <div class="col-md-4"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d743.0109086978572!2d-6.428572386169117!3d42.967911390595184!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd30d53d9e4d7e41%3A0x42a340d7bb80dae3!2sMina+La+Escondida!5e1!3m2!1sen!2srs!4v1529677153215"
+                            width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+                </div>
+            </div>
+
+            <a id="colapseMOJ" href="#" class="btn" data-toggle="collapse" data-target="#demo2">Company Telephones:</a>
+            <div id="demo2" class="collapse">
+                <h3>Company Telephones:</h3><br> Lorem ipsum dolor +321 456 7899 <br><br> Consectetur adipisicing elit +321 741 8528 <br><br> Something elit +321 987 6541<br><br> Lorem ipsum dolor +321 456 7899 <br><br>Consectetur adipisicing elit +321 741
+                8528
+            </div>
+
+            <a id="colapseMOJ" href="#" class="btn" data-toggle="collapse" data-target="#demo3">Email Contact:</a>
+            <div id="demo3" class="collapse">
+                <h3>Email Contact:</h3> <br> Lorem@ipsum.dolor <br><br> Consectetur@adipisicing.elit<br> <br>Something@elit.com<br><br> Consectetur@adipisicing.elit<br><br> Something@elit.com
+            </div>
+
+            <a id="colapseMOJ" href="#" class="btn" data-toggle="collapse" data-target="#demo4">Existing Clients:</a>
+            <div id="demo4" class="collapse">
+                <h3>Existing Clients:</h3><br>
+                <a href="#">
+                    <h3>Company 1</h3>
+                </a>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae cum saepe iusto vitae assumenda adipisci quidem illo beatae. Necessitatibus possimus debitis eos iusto porro nobis maxime quidem voluptates. Laboriosam, provident.</p>
+                <br><br>
+                <a href="#">
+                    <h3>Company 2</h3>
+                </a>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae cum saepe iusto vitae assumenda adipisci quidem illo beatae. Necessitatibus possimus debitis eos iusto porro nobis maxime quidem voluptates. Laboriosam, provident.</p><br><br>
+                <a href="#">
+                    <h3>Company 3</h3>
+                </a>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae cum saepe iusto vitae assumenda adipisci quidem illo beatae. Necessitatibus possimus debitis eos iusto porro nobis maxime quidem voluptates. Laboriosam, provident.</p><br><br>
+                <a href="#">
+                    <h3>Company 4</h3>
+                </a>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae cum saepe iusto vitae assumenda adipisci quidem illo beatae. Necessitatibus possimus debitis eos iusto porro nobis maxime quidem voluptates. Laboriosam, provident.</p><br><br>
+                <a href="#">
+                    <h3>Company 5</h3>
+                </a>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae cum saepe iusto vitae assumenda adipisci quidem illo beatae. Necessitatibus possimus debitis eos iusto porro nobis maxime quidem voluptates. Laboriosam, provident.</p><br><br>
+                <a href="#">
+                    <h3>Company 6</h3>
+                </a>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae cum saepe iusto vitae assumenda adipisci quidem illo beatae. Necessitatibus possimus debitis eos iusto porro nobis maxime quidem voluptates. Laboriosam, provident.</p><br><br>
+            </div>
+            <a id="colapseMOJ" href="#" class="btn" data-toggle="collapse" data-target="#demo5">Apply for work:</a>
+            <div id="demo5" class="collapse">
+                <h3>Apply for work:</h3> <br>
+                <form id="formMOJ" class="container-fluid" action="/action_page.php">
+                    <h3>Work for us</h3><br>
+                    <label for="user">Your name</label><br>
+                    <input class="form-control" type="text" id="user"><br>
+                    <label for="profesija">Your profesion</label><br>
+                    <select class="form-control" id="profesija" name="jpbs">
+                            <option value="Miner">Miner</option>
+                            <option value="Electrician">Electrician</option>
+                        <option value="Machinist">Machinist</option>
+                        <option value="Truck Driver">Truck Driver</option>
+                        <option value="Chemistry Technician">Chemistry Technician</option>
+                      </select><br>
+                    <label for="email">Your email</label><br>
+                    <input class="form-control" type="email" id="email"><br>
+                    <label for="cv">Send us your CV</label><br>
+                    <input class="" id="cv" type="file" name="CV" accept="doc/*"><br><br>
+                    <button class="btn btn-block" id="fast" type="submit">Send</button><br>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- SOMETHING ELSE -->
+    <div id="aboutMOJ" class="container-fluid">
+        <br>
+        <h3>Something else</h3>
+        <br>
+        <p>Donec quis libero metus. Phasellus sit amet libero condimentum, faucibus nisi vitae, facilisis elit. Integer lacinia nisi quis lacus imperdiet lobortis. Curabitur in tristique felis. Fusce ipsum nisi, gravida vel blandit vel, scelerisque in tortor.
+            Morbi tincidunt mauris commodo sagittis egestas. Praesent ultrices ligula, a venenatis quam gravida. Suspendisse mollis, lorem id ornare consequat, justo magna egestas tortor, sit amet lobortis augue nisi ac mi. Aliquam interdum enim eu lorem
+            tempus volutpat. Integer quis sapien. Nullam fermentum, lorem a vehicula lobortis, tortor sapien aliquet ipsum, nec sodales risus magna ac ligula. Phasellus eget est ac diam varius consectetur id nec leo.
+        </p>
+        <br>
+    </div>
+    <!-- FAST CONNTACT -->
+    <button id="contactMOJ" type="button" class="btn btn-block" data-toggle="modal" data-target="#myModal2"><h2><i class="fa fa-pencil-square-o" style="font-size:36px"></i> Connect with us <strong>FAST</strong></h2></button>
+
+    <!-- The Modal -->
+    <div class="modal" id="myModal2">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Connect with us <strong>FAST</strong></h4>
+                    <button id="zatvori" type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <label for="emailac">Your email</label><br>
+                    <input type="email" class="form-control" id="emailac"><br>
+
+                    <label for="textac">Write us a message</label>
+                    <textarea class="form-control" style="resize: none; width: 100%" name="" id="textac" cols="30" rows="10"></textarea><br>
+
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="submit" id="fast" class="btn btn-block "><strong>Send</strong></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="iksic.js"></script>
+    <script src="main.js"></script>
+    <script src="historyLightBox.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="stil/css/main4.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <nav id="navMOJ" class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <a class="navbar-brand" href="index.html"><i style="font-size:24px" class="fa">&#xf015;</i></a>
+        <button class="navbar-toggler container2" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" onclick="xFunc(this)">
+                   
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </button>
+
+        <div id="navbarNavDropdown" class="navbar-collapse collapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="beginnings.html">Beginnings</a>
+                </li>
+                <li class=" dropdown">
+                    <a class="nav-link " href="#"> Pricing & Orders </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="workers.html">Our workers</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Connect with us</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav">
+                <li class=" dropdown nav-item">
+                    <a class="nav-link dropbtn " href="" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Language <i style="font-size:24px" class="fa">&#xf0dd;</i></a>
+                    <div class=" dropdown-content" aria-labelledby="navbarDropdownMenuLink">
+                        <a id="hoverac" class="dropdown-item" href="#">Language 1</a>
+                        <a class="dropdown-item" href="#">Language 2</a>
+                        <a class="dropdown-item" href="#">Language 3</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <button class="btn download">Download App</button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- JUMBOTRON -->
+    <div id="jumbacMOJ" style="padding-top: 75px">
+        <h1>Connect with us</h1>
+        <p>Quod voluptate, obcaecati aliquid delectus mollitia quaerat, porro cupiditate maiores architecto animi accusamus eveniet? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam ad magni pariatur sequi, mollitia dolorem neque? Quod voluptate,
+            obcaecati aliquid delectus mollitia quaerat, porro cupiditate maiores architecto animi accusamus eveniet? Quod voluptate, obcaecati aliquid delectus mollitia quaerat, porro cupiditate maiores architecto animi accusamus eveniet? Lorem ipsum
+            dolor, sit amet consectetur adipisicing elit. Aliquam ad magni pariatur sequi, mollitia dolorem neque? Quod voluptate, obcaecati aliquid delectus mollitia quaerat, porro cupiditate maiores architecto animi accusamus eveniet?</p>
+        <button id="fast" class="btn btn-block" style="padding: 15px;"><h3>Connect with us NOW</h3></button>
+        <br>
+        <p>Quod voluptate, obcaecati aliquid delectus mollitia quaerat, porro cupiditate maiores architecto animi accusamus eveniet? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam ad magni pariatur sequi, mollitia dolorem neque? Quod voluptate,
+            obcaecati aliquid delectus mollitia quaerat, porro cupiditate maiores architecto animi accusamus eveniet?</p>
+        <br><br>
+    </div>
+
+    <!-- ADRESA I KONTAKTI -->
+    <div class="row">
+        <div class="col-md-12">
+            <a id="colapseMOJ" href="#" class="btn" data-toggle="collapse" data-target="#demo1">Shipment Address:</a>
+            <div id="demo1" class="collapse">
+                <h3>Shipment Address:</h3> <br> Lorem ipsum dolor sit amet 12 500 <br> Dolor street 35/8. <br><br> Ipsum dolor sit amet 14 870 <br> Something street 63/9. Lorem ipsum dolor sit amet 12 500 <br> Dolor street 35/8. <br><br> Ipsum dolor sit amet
+                14 870 <br> Something street 63/9.
+            </div>
+
+            <a id="colapseMOJ" href="#" class="btn" data-toggle="collapse" data-target="#demo2">Company Telephones:</a>
+            <div id="demo2" class="collapse">
+                <h3>Company Telephones:</h3><br> Lorem ipsum dolor +321 456 7899 <br> Consectetur adipisicing elit +321 741 8528 <br> Something elit +321 987 6541<br> Lorem ipsum dolor +321 456 7899 <br>Consectetur adipisicing elit +321 741 8528
+            </div>
+
+            <a id="colapseMOJ" href="#" class="btn" data-toggle="collapse" data-target="#demo3">Email Contact:</a>
+            <div id="demo3" class="collapse">
+                <h3>Email Contact:</h3> <br> Lorem@ipsum.dolor <br> Consectetur@adipisicing.elit<br> Something@elit.com<br> Consectetur@adipisicing.elit<br> Something@elit.com
+            </div>
+
+            <a id="colapseMOJ" href="#" class="btn" data-toggle="collapse" data-target="#demo4">Existing Clients:</a>
+            <div id="demo4" class="collapse">
+                <h3>Existing Clients:</h3><br>
+                <a href="#">Company 1</a><br>
+                <a href="#">Company 2</a><br>
+                <a href="#">Company 3</a><br>
+                <a href="#">Company 4</a><br>
+                <a href="#">Company 5</a><br>
+                <a href="#">Company 6</a><br>
+            </div>
+
+            <a id="colapseMOJ" href="#" class="btn" data-toggle="collapse" data-target="#demo5">Google maps:</a>
+            <div id="demo5" class="collapse">
+
+                <div class="row">
+                    <div class="column">
+                        <h6 class="text-left">Sunrise Dam Mine Australia:</h6>
+                        <img src="h3.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+                    </div>
+                    <div class="column">
+                        <h6 class="text-left">Bingham Canyon Usa:</h6>
+                        <img src="h3.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+                    </div>
+                    <div class="column">
+                        <h6 class="text-left">Fusce ipsum nisi:</h6>
+                        <img src="h3.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+                    </div>
+                    <div class="column">
+                        <h6 class="text-left">Suspendisse nisi mollis:</h6>
+                        <img src="h4.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+                    </div>
+                </div>
+
+                <div id="myModal" class="modal2">
+                    <div class="modal-content">
+                        <span style="padding: 10px" class="close cursor" onclick="closeModal()">&times;</span>
+                        
+                        <div class="mySlides">
+                            <div class="numbertext">Sunrise Dam Mine Australia</div>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11868.977256380893!2d122.41563539007603!3d-29.078935194800458!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe5858a3ca26fe2fe!2sSunrise+Dam+Gold+Mine!5e1!3m2!1sen!2srs!4v1529673106557"
+                                width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+                        </div>
+
+                        <div class="mySlides">
+                            <div class="numbertext">Bingham Canyon Usa:</div>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16743.489771004777!2d-112.15437672914669!3d40.522382119881115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x875299fbf94e3949%3A0xc450bdb3d868069f!2sBingham+Copper+Mine!5e1!3m2!1sen!2srs!4v1529674239444"
+                                width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+                        </div>
+
+                        <div class="mySlides">
+                            <div class="numbertext">3 / 4</div>
+                            <img src="h3.jpg" style="width:100%">
+                        </div>
+
+                        <div class="mySlides">
+                            <div class="numbertext">4 / 4</div>
+                            <img src="h4.jpg" style="width:100%">
+                        </div>
+
+                        <div class="caption-container">
+                            <p id="caption"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="iksic.js"></script>
+    <script src="main.js"></script>
+    <script src="historyLightBox.js"></script>
+</body>
+
+</html>

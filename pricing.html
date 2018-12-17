@@ -1,0 +1,1498 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charseset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="stil/css/main5.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+</head>
+
+<body data-spy="scroll" data-target=".pricing" data-offset="50" ng-app="myApp" ng-controller="myCtrl">
+    <!-- NAVBAR -->
+    <nav id="navMOJ" class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <a class="navbar-brand" href="index.html"><i style="font-size:24px" class="fa">&#xf015;</i></a>
+        <button class="navbar-toggler container2" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" onclick="xFunc(this)">
+               
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </button>
+
+        <div id="navbarNavDropdown" class="navbar-collapse collapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="beginnings.html">Beginnings</a>
+                </li>
+                <li class=" dropdown">
+                    <a class="nav-link " href="pricing.html"> Pricing & Orders </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="workers.html">Our workers</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Connect with us</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav">
+                <li class=" dropdown nav-item">
+                    <a class="nav-link dropbtn " href="" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Language <i style="font-size:24px" class="fa">&#xf0dd;</i></a>
+                    <div class=" dropdown-content" aria-labelledby="navbarDropdownMenuLink">
+                        <a id="hoverac" class="dropdown-item" href="#">Language 1</a>
+                        <a class="dropdown-item" href="#">Language 2</a>
+                        <a class="dropdown-item" href="#">Language 3</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <button class="btn download">Download App</button>
+                </li>
+                <li class="nav-item">
+                    <!-- Button to Open the Modal -->
+                    <button type="button" class="btn shoping" data-toggle="modal" data-target="#myModal">
+                        <i style="font-size:24px" class="fa">&#xf291;</i>  <span class="badge badge-danger" ng-bind="count"></span> 
+                        </button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- JUMBOTRON -->
+    <div id="jumbacMOJ" class="jumbotron">
+        <br><br><br>
+        <h1>Order our products now</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint veritatis ea ullam dicta labore mollitia exercitationem at expedita inventore culpa voluptate error voluptatum iure voluptatem, totam, dolorum adipisci porro tempora.</p>
+        <br>
+        <div class="btn-group-vertical">
+            <!-- COPPER -->
+            <div class="dropdown dropright">
+                <button style="width: 250px" type="button" class="btn-lg btn btn-outline-dark dropdown-toggle" data-toggle="dropdown">
+              Copper 
+            </button>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#copperWire">Copper Wire</a>
+                    <a class="dropdown-item" href="#copperSheet">Copper Sheet</a>
+                    <a class="dropdown-item" href="#copperCastings">Copper Castings</a>
+                    <a class="dropdown-item" href="#copperDust">Copper Dust</a>
+                </div>
+            </div>
+            <!-- STEEL -->
+            <div class="dropdown dropright">
+                <button style="width: 250px" type="button" class="btn-lg btn btn-outline-dark dropdown-toggle" data-toggle="dropdown">
+              Steel 
+            </button>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#steelWire">Steel Wire</a>
+                    <a class="dropdown-item" href="#steelSheet">Steel Sheet</a>
+                    <a class="dropdown-item" href="#steelChains">Chains</a>
+                    <a class="dropdown-item" href="#machineParts">Machine parts</a>
+                </div>
+            </div>
+
+            <!-- SILVER -->
+            <div class="dropdown dropright">
+                <button style="width: 250px" type="button" class="btn-lg btn btn-outline-dark dropdown-toggle" data-toggle="dropdown">
+              Silver 
+            </button>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#silverWire">Silver Wire</a>
+                    <a class="dropdown-item" href="#silverCasting">Silver Castings</a>
+                    <a class="dropdown-item" href="#electronics">Electronics</a>
+                    <a class="dropdown-item" href="#silverVesels">Silver Vessels</a>
+                    <a class="dropdown-item" href="#silverJewlry">Jewelry</a>
+                </div>
+            </div>
+        </div>
+        <br> <br>
+    </div>
+    <div class="pricing" style="width: 100%">
+        <!-- COPPER -->
+        <div class="container-fluid">
+            <div id="copperWire" class="headerMOJ">
+                <h2>Copper Wire</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga aliquid, quas eveniet consectetur porro, sed eaque sint voluptates magnam itaque quibusdam vel sapiente aut unde possimus sunt ad molestias deleniti.</p>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card" style="width:100%">
+                        <img class="card-img-top" src="img/copperWire.jpg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h3 class="card-title">Product Name</h3>
+                            <p class="card-text">Some example text some example text.</p>
+                            <p>Price {{copperPrice[0]}}<i style="font-size:14px" class="fa">&#xf153;</i></p>
+                            <ul>
+                                <li> Spec 1</li>
+                                <li> Spec 2</li>
+                                <li> Spec 3</li>
+                                <li> Spec 4</li>
+                            </ul>
+                            <a ng-click="count = count + 1;copper[0]=copper[0]+1;" href="javascript:void(0);" id="fast" class="btn btn-block"><i style="font-size:24px" class="fa">&#xf067;</i> Add to chart</a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card" style="width:100%">
+                        <img class="card-img-top" src="img/copperWire.jpg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h3 class="card-title">Product Name</h3>
+                            <p class="card-text">Some example text some example text.</p>
+                            <p>Price {{copperPrice[1]}}<i style="font-size:14px" class="fa">&#xf153;</i></p>
+                            <ul>
+                                <li> Spec 1</li>
+                                <li> Spec 2</li>
+                                <li> Spec 3</li>
+                                <li> Spec 4</li>
+                            </ul>
+                            <a ng-click="count = count + 1;copper[1]=copper[1]+1;" href="javascript:void(0);" id="fast" class="btn btn-block"><i style="font-size:24px" class="fa">&#xf067;</i> Add to chart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card" style="width:100%">
+                        <img class="card-img-top" src="img/copperWire.jpg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h3 class="card-title">Product Name</h3>
+                            <p class="card-text">Some example text some example text.</p>
+                            <p>Price {{copperPrice[2]}}<i style="font-size:14px" class="fa">&#xf153;</i></p>
+                            <ul>
+                                <li> Spec 1</li>
+                                <li> Spec 2</li>
+                                <li> Spec 3</li>
+                                <li> Spec 4</li>
+                            </ul>
+                            <a ng-click="count = count + 1;copper[2]=copper[2]+1;" href="javascript:void(0);" id="fast" class="btn btn-block"><i style="font-size:24px" class="fa">&#xf067;</i> Add to chart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card" style="width:100%">
+                        <img class="card-img-top" src="img/copperWire.jpg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h3 class="card-title">Product Name</h3>
+                            <p class="card-text">Some example text some example text.</p>
+                            <p>Price {{copperPrice[3]}}<i style="font-size:14px" class="fa">&#xf153;</i></p>
+                            <ul>
+                                <li> Spec 1</li>
+                                <li> Spec 2</li>
+                                <li> Spec 3</li>
+                                <li> Spec 4</li>
+                            </ul>
+                            <a ng-click="count = count + 1;copper[3]=copper[3]+1;" href="javascript:void(0);" id="fast" class="btn btn-block"><i style="font-size:24px" class="fa">&#xf067;</i> Add to chart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+
+            <div id="copperSheet" class="headerMOJ">
+                <h2>Copper Sheet</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga aliquid, quas eveniet consectetur porro, sed eaque sint voluptates magnam itaque quibusdam vel sapiente aut unde possimus sunt ad molestias deleniti.</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto illum officia eum non accusamus fugit ab distinctio qui dolore aut totam, omnis ducimus vel aspernatur aperiam nemo, sed nesciunt maxime.</p>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card" style="width:100%">
+                        <img class="card-img-top" src="img/copperSheet.jpg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h3 class="card-title">Product Name</h3>
+                            <p class="card-text">Some example text some example text.</p>
+                            <p>Price {{copperPrice[4]}}<i style="font-size:14px" class="fa">&#xf153;</i></p>
+                            <ul>
+                                <li> Spec 1</li>
+                                <li> Spec 2</li>
+                                <li> Spec 3</li>
+                                <li> Spec 4</li>
+                            </ul>
+                            <a ng-click="count = count + 1;copper[4]=copper[4]+1;" href="javascript:void(0);" id="fast" class="btn btn-block"><i style="font-size:24px" class="fa">&#xf067;</i> Add to chart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card" style="width:100%">
+                        <img class="card-img-top" src="img/copperSheet.jpg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h3 class="card-title">Product Name</h3>
+                            <p class="card-text">Some example text some example text.</p>
+                            <p>Price {{copperPrice[5]}}<i style="font-size:14px" class="fa">&#xf153;</i></p>
+                            <ul>
+                                <li> Spec 1</li>
+                                <li> Spec 2</li>
+                                <li> Spec 3</li>
+                                <li> Spec 4</li>
+                            </ul>
+                            <a ng-click="count = count + 1;copper[5]=copper[5]+1;" href="javascript:void(0);" id="fast" class="btn btn-block"><i style="font-size:24px" class="fa">&#xf067;</i> Add to chart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card" style="width:100%">
+                        <img class="card-img-top" src="img/copperSheet.jpg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h3 class="card-title">Product Name</h3>
+                            <p class="card-text">Some example text some example text.</p>
+                            <p>Price {{copperPrice[6]}}<i style="font-size:14px" class="fa">&#xf153;</i></p>
+                            <ul>
+                                <li> Spec 1</li>
+                                <li> Spec 2</li>
+                                <li> Spec 3</li>
+                                <li> Spec 4</li>
+                            </ul>
+                            <a ng-click="count = count + 1;copper[6]=copper[6]+1;" href="javascript:void(0);" id="fast" class="btn btn-block"><i style="font-size:24px" class="fa">&#xf067;</i> Add to chart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card" style="width:100%">
+                        <img class="card-img-top" src="img/copperSheet.jpg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h3 class="card-title">Product Name</h3>
+                            <p class="card-text">Some example text some example text.</p>
+                            <p>Price {{copperPrice[7]}}<i style="font-size:14px" class="fa">&#xf153;</i></p>
+                            <ul>
+                                <li> Spec 1</li>
+                                <li> Spec 2</li>
+                                <li> Spec 3</li>
+                                <li> Spec 4</li>
+                            </ul>
+                            <a ng-click="count = count + 1;copper[7]=copper[7]+1;" href="javascript:void(0);" id="fast" class="btn btn-block"><i style="font-size:24px" class="fa">&#xf067;</i> Add to chart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+
+            <div id="copperCastings" class="headerMOJ">
+                <h2>Copper Castings</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga aliquid, quas eveniet consectetur porro, sed</p>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card" style="width:100%">
+                        <img class="card-img-top" src="img/copperCasting.jpg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h3 class="card-title">Product Name</h3>
+                            <p class="card-text">Some example text some example text.</p>
+                            <p>Price {{copperPrice[8]}}<i style="font-size:14px" class="fa">&#xf153;</i></p>
+                            <ul>
+                                <li> Spec 1</li>
+                                <li> Spec 2</li>
+                                <li> Spec 3</li>
+                                <li> Spec 4</li>
+                            </ul>
+                            <a ng-click="count = count + 1;copper[8]=copper[8]+1;" href="javascript:void(0);" id="fast" class="btn btn-block"><i style="font-size:24px" class="fa">&#xf067;</i> Add to chart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card" style="width:100%">
+                        <img class="card-img-top" src="img/copperCasting.jpg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h3 class="card-title">Product Name</h3>
+                            <p class="card-text">Some example text some example text.</p>
+                            <p>Price {{copperPrice[9]}}<i style="font-size:14px" class="fa">&#xf153;</i></p>
+                            <ul>
+                                <li> Spec 1</li>
+                                <li> Spec 2</li>
+                                <li> Spec 3</li>
+                                <li> Spec 4</li>
+                            </ul>
+                            <a ng-click="count = count + 1;copper[9]=copper[9]+1;" href="javascript:void(0);" id="fast" class="btn btn-block"><i style="font-size:24px" class="fa">&#xf067;</i> Add to chart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card" style="width:100%">
+                        <img class="card-img-top" src="img/copperCasting.jpg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h3 class="card-title">Product Name</h3>
+                            <p class="card-text">Some example text some example text.</p>
+                            <p>Price {{copperPrice[10]}}<i style="font-size:14px" class="fa">&#xf153;</i></p>
+                            <ul>
+                                <li> Spec 1</li>
+                                <li> Spec 2</li>
+                                <li> Spec 3</li>
+                                <li> Spec 4</li>
+                            </ul>
+                            <a ng-click="count = count + 1;copper[10]=copper[10]+1;" href="javascript:void(0);" id="fast" class="btn btn-block"><i style="font-size:24px" class="fa">&#xf067;</i> Add to chart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card" style="width:100%">
+                        <img class="card-img-top" src="img/copperCasting.jpg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h3 class="card-title">Product Name</h3>
+                            <p class="card-text">Some example text some example text.</p>
+                            <p>Price {{copperPrice[11]}}<i style="font-size:14px" class="fa">&#xf153;</i></p>
+                            <ul>
+                                <li> Spec 1</li>
+                                <li> Spec 2</li>
+                                <li> Spec 3</li>
+                                <li> Spec 4</li>
+                            </ul>
+                            <a ng-click="count = count + 1;copper[11]=copper[11]+1;" href="javascript:void(0);" id="fast" class="btn btn-block"><i style="font-size:24px" class="fa">&#xf067;</i> Add to chart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+
+            <div id="copperDust" class="headerMOJ">
+                <h2>Copper Dust</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga aliquid, quas eveniet consectetur porro, sed</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat molestias magnam quis porro autem voluptatem, illum tenetur ex reiciendis! Ipsam corrupti temporibus ea at quae tempora ad suscipit sint ratione!</p>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card" style="width:100%">
+                        <img class="card-img-top" src="img/copperDust.jpg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h3 class="card-title">Product Name</h3>
+                            <p class="card-text">Some example text some example text.</p>
+                            <p>Price {{copperPrice[12]}}<i style="font-size:14px" class="fa">&#xf153;</i></p>
+                            <ul>
+                                <li> Spec 1</li>
+                                <li> Spec 2</li>
+                                <li> Spec 3</li>
+                                <li> Spec 4</li>
+                            </ul>
+                            <a ng-click="count = count + 1;copper[12]=copper[12]+1;" href="javascript:void(0);" id="fast" class="btn btn-block"><i style="font-size:24px" class="fa">&#xf067;</i> Add to chart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card" style="width:100%">
+                        <img class="card-img-top" src="img/copperDust.jpg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h3 class="card-title">Product Name</h3>
+                            <p class="card-text">Some example text some example text.</p>
+                            <p>Price {{copperPrice[13]}}<i style="font-size:14px" class="fa">&#xf153;</i></p>
+                            <ul>
+                                <li> Spec 1</li>
+                                <li> Spec 2</li>
+                                <li> Spec 3</li>
+                                <li> Spec 4</li>
+                            </ul>
+                            <a ng-click="count = count + 1;copper[13]=copper[13]+1;" href="javascript:void(0);" id="fast" class="btn btn-block"><i style="font-size:24px" class="fa">&#xf067;</i> Add to chart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card" style="width:100%">
+                        <img class="card-img-top" src="img/copperDust.jpg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h3 class="card-title">Product Name</h3>
+                            <p class="card-text">Some example text some example text.</p>
+                            <p>Price {{copperPrice[14]}}<i style="font-size:14px" class="fa">&#xf153;</i></p>
+                            <ul>
+                                <li> Spec 1</li>
+                                <li> Spec 2</li>
+                                <li> Spec 3</li>
+                                <li> Spec 4</li>
+                            </ul>
+                            <a ng-click="count = count + 1;copper[14]=copper[14]+1;" href="javascript:void(0);" id="fast" class="btn btn-block"><i style="font-size:24px" class="fa">&#xf067;</i> Add to chart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card" style="width:100%">
+                        <img class="card-img-top" src="img/copperDust.jpg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h3 class="card-title">Product Name</h3>
+                            <p class="card-text">Some example text some example text.</p>
+                            <p>Price {{copperPrice[15]}}<i style="font-size:14px" class="fa">&#xf153;</i></p>
+                            <ul>
+                                <li> Spec 1</li>
+                                <li> Spec 2</li>
+                                <li> Spec 3</li>
+                                <li> Spec 4</li>
+                            </ul>
+                            <a ng-click="count = count + 1;copper[15]=copper[15]+1;" href="javascript:void(0);" id="fast" class="btn btn-block"><i style="font-size:24px" class="fa">&#xf067;</i> Add to chart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <br>
+        <!-- STEEL -->
+        <div class="container-fluid">
+            <div id="steelWire" class="headerMOJ">
+                <h2>Steel Wire</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga aliquid, quas eveniet consectetur porro, sed eaque sint voluptates magnam itaque quibusdam vel sapiente aut unde possimus sunt ad molestias deleniti.</p>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card" style="width:100%">
+                        <img class="card-img-top" src="img/steelWire.jpg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h3 class="card-title">Product Name</h3>
+                            <p class="card-text">Some example text some example text.</p>
+                            <p>Price {{steelPrice[0]}}<i style="font-size:14px" class="fa">&#xf153;</i></p>
+                            <ul>
+                                <li> Spec 1</li>
+                                <li> Spec 2</li>
+                                <li> Spec 3</li>
+                                <li> Spec 4</li>
+                            </ul>
+                            <a ng-click="count = count + 1;steel[0]=steel[0]+1;" href="javascript:void(0);" id="fast" class="btn btn-block"><i style="font-size:24px" class="fa">&#xf067;</i> Add to chart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card" style="width:100%">
+                        <img class="card-img-top" src="img/steelWire.jpg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h3 class="card-title">Product Name</h3>
+                            <p class="card-text">Some example text some example text.</p>
+                            <p>Price {{steelPrice[1]}}<i style="font-size:14px" class="fa">&#xf153;</i></p>
+                            <ul>
+                                <li> Spec 1</li>
+                                <li> Spec 2</li>
+                                <li> Spec 3</li>
+                                <li> Spec 4</li>
+                            </ul>
+                            <a ng-click="count = count + 1;steel[1]=steel[1]+1;" href="javascript:void(0);" id="fast" class="btn btn-block"><i style="font-size:24px" class="fa">&#xf067;</i> Add to chart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card" style="width:100%">
+                        <img class="card-img-top" src="img/steelWire.jpg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h3 class="card-title">Product Name</h3>
+                            <p class="card-text">Some example text some example text.</p>
+                            <p>Price {{steelPrice[2]}}<i style="font-size:14px" class="fa">&#xf153;</i></p>
+                            <ul>
+                                <li> Spec 1</li>
+                                <li> Spec 2</li>
+                                <li> Spec 3</li>
+                                <li> Spec 4</li>
+                            </ul>
+                            <a ng-click="count = count + 1;steel[2]=steel[2]+1;" href="javascript:void(0);" id="fast" class="btn btn-block"><i style="font-size:24px" class="fa">&#xf067;</i> Add to chart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card" style="width:100%">
+                        <img class="card-img-top" src="img/steelWire.jpg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h3 class="card-title">Product Name</h3>
+                            <p class="card-text">Some example text some example text.</p>
+                            <p>Price {{steelPrice[3]}}<i style="font-size:14px" class="fa">&#xf153;</i></p>
+                            <ul>
+                                <li> Spec 1</li>
+                                <li> Spec 2</li>
+                                <li> Spec 3</li>
+                                <li> Spec 4</li>
+                            </ul>
+                            <a ng-click="count = count + 1;steel[3]=steel[3]+1;" href="javascript:void(0);" id="fast" class="btn btn-block"><i style="font-size:24px" class="fa">&#xf067;</i> Add to chart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+
+            <div id="steelSheet" class="headerMOJ">
+                <h2>Steel Sheet</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga aliquid, quas eveniet consectetur porro, sed eaque sint voluptates magnam itaque quibusdam vel sapiente aut unde possimus sunt ad molestias deleniti.</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto illum officia eum non accusamus fugit ab distinctio qui dolore aut totam, omnis ducimus vel aspernatur aperiam nemo, sed nesciunt maxime.</p>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card" style="width:100%">
+                        <img class="card-img-top" src="img/steelSheet.jpg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h3 class="card-title">Product Name</h3>
+                            <p class="card-text">Some example text some example text.</p>
+                            <p>Price {{steelPrice[4]}}<i style="font-size:14px" class="fa">&#xf153;</i></p>
+                            <ul>
+                                <li> Spec 1</li>
+                                <li> Spec 2</li>
+                                <li> Spec 3</li>
+                                <li> Spec 4</li>
+                            </ul>
+                            <a ng-click="count = count + 1;steel[4]=steel[4]+1;" href="javascript:void(0);" id="fast" class="btn btn-block"><i style="font-size:24px" class="fa">&#xf067;</i> Add to chart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card" style="width:100%">
+                        <img class="card-img-top" src="img/steelSheet.jpg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h3 class="card-title">Product Name</h3>
+                            <p class="card-text">Some example text some example text.</p>
+                            <p>Price {{steelPrice[5]}}<i style="font-size:14px" class="fa">&#xf153;</i></p>
+                            <ul>
+                                <li> Spec 1</li>
+                                <li> Spec 2</li>
+                                <li> Spec 3</li>
+                                <li> Spec 4</li>
+                            </ul>
+                            <a ng-click="count = count + 1;steel[5]=steel[5]+1;" href="javascript:void(0);" id="fast" class="btn btn-block"><i style="font-size:24px" class="fa">&#xf067;</i> Add to chart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card" style="width:100%">
+                        <img class="card-img-top" src="img/steelSheet.jpg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h3 class="card-title">Product Name</h3>
+                            <p class="card-text">Some example text some example text.</p>
+                            <p>Price {{steelPrice[6]}}<i style="font-size:14px" class="fa">&#xf153;</i></p>
+                            <ul>
+                                <li> Spec 1</li>
+                                <li> Spec 2</li>
+                                <li> Spec 3</li>
+                                <li> Spec 4</li>
+                            </ul>
+                            <a ng-click="count = count + 1;steel[6]=steel[6]+1;" href="javascript:void(0);" id="fast" class="btn btn-block"><i style="font-size:24px" class="fa">&#xf067;</i> Add to chart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card" style="width:100%">
+                        <img class="card-img-top" src="img/steelSheet.jpg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h3 class="card-title">Product Name</h3>
+                            <p class="card-text">Some example text some example text.</p>
+                            <p>Price {{steelPrice[7]}}<i style="font-size:14px" class="fa">&#xf153;</i></p>
+                            <ul>
+                                <li> Spec 1</li>
+                                <li> Spec 2</li>
+                                <li> Spec 3</li>
+                                <li> Spec 4</li>
+                            </ul>
+                            <a ng-click="count = count + 1;steel[7]=steel[7]+1;" href="javascript:void(0);" id="fast" class="btn btn-block"><i style="font-size:24px" class="fa">&#xf067;</i> Add to chart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+
+            <div id="steelChains" class="headerMOJ">
+                <h2>Steel Chains</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga aliquid, quas eveniet consectetur porro, sed</p>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card" style="width:100%">
+                        <img class="card-img-top" src="img/steelChain.jpg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h3 class="card-title">Product Name</h3>
+                            <p class="card-text">Some example text some example text.</p>
+                            <p>Price {{steelPrice[8]}}<i style="font-size:14px" class="fa">&#xf153;</i></p>
+                            <ul>
+                                <li> Spec 1</li>
+                                <li> Spec 2</li>
+                                <li> Spec 3</li>
+                                <li> Spec 4</li>
+                            </ul>
+                            <a ng-click="count = count + 1;steel[8]=steel[8]+1;" href="javascript:void(0);" id="fast" class="btn btn-block"><i style="font-size:24px" class="fa">&#xf067;</i> Add to chart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card" style="width:100%">
+                        <img class="card-img-top" src="img/steelChain.jpg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h3 class="card-title">Product Name</h3>
+                            <p class="card-text">Some example text some example text.</p>
+                            <p>Price {{steelPrice[9]}}<i style="font-size:14px" class="fa">&#xf153;</i></p>
+                            <ul>
+                                <li> Spec 1</li>
+                                <li> Spec 2</li>
+                                <li> Spec 3</li>
+                                <li> Spec 4</li>
+                            </ul>
+                            <a ng-click="count = count + 1;steel[9]=steel[9]+1;" href="javascript:void(0);" id="fast" class="btn btn-block"><i style="font-size:24px" class="fa">&#xf067;</i> Add to chart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card" style="width:100%">
+                        <img class="card-img-top" src="img/steelChain.jpg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h3 class="card-title">Product Name</h3>
+                            <p class="card-text">Some example text some example text.</p>
+                            <p>Price {{steelPrice[10]}}<i style="font-size:14px" class="fa">&#xf153;</i></p>
+                            <ul>
+                                <li> Spec 1</li>
+                                <li> Spec 2</li>
+                                <li> Spec 3</li>
+                                <li> Spec 4</li>
+                            </ul>
+                            <a ng-click="count = count + 1;steel[10]=steel[10]+1;" href="javascript:void(0);" id="fast" class="btn btn-block"><i style="font-size:24px" class="fa">&#xf067;</i> Add to chart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card" style="width:100%">
+                        <img class="card-img-top" src="img/steelChain.jpg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h3 class="card-title">Product Name</h3>
+                            <p class="card-text">Some example text some example text.</p>
+                            <p>Price {{steelPrice[11]}}<i style="font-size:14px" class="fa">&#xf153;</i></p>
+                            <ul>
+                                <li> Spec 1</li>
+                                <li> Spec 2</li>
+                                <li> Spec 3</li>
+                                <li> Spec 4</li>
+                            </ul>
+                            <a ng-click="count = count + 1;steel[11]=steel[11]+1;" href="javascript:void(0);" id="fast" class="btn btn-block"><i style="font-size:24px" class="fa">&#xf067;</i> Add to chart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+
+            <div id="machineParts" class="headerMOJ">
+                <h2>Machine Parts</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga aliquid, quas eveniet consectetur porro, sed</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat molestias magnam quis porro autem voluptatem, illum tenetur ex reiciendis! Ipsam corrupti temporibus ea at quae tempora ad suscipit sint ratione!</p>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card" style="width:100%">
+                        <img class="card-img-top" src="img/steelParts.jpg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h3 class="card-title">Product Name</h3>
+                            <p class="card-text">Some example text some example text.</p>
+                            <p>Price {{steelPrice[12]}}<i style="font-size:14px" class="fa">&#xf153;</i></p>
+                            <ul>
+                                <li> Spec 1</li>
+                                <li> Spec 2</li>
+                                <li> Spec 3</li>
+                                <li> Spec 4</li>
+                            </ul>
+                            <a ng-click="count = count + 1;steel[12]=steel[12]+1;" href="javascript:void(0);" id="fast" class="btn btn-block"><i style="font-size:24px" class="fa">&#xf067;</i> Add to chart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card" style="width:100%">
+                        <img class="card-img-top" src="img/steelParts.jpg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h3 class="card-title">Product Name</h3>
+                            <p class="card-text">Some example text some example text.</p>
+                            <p>Price {{steelPrice[13]}}<i style="font-size:14px" class="fa">&#xf153;</i></p>
+                            <ul>
+                                <li> Spec 1</li>
+                                <li> Spec 2</li>
+                                <li> Spec 3</li>
+                                <li> Spec 4</li>
+                            </ul>
+                            <a ng-click="count = count + 1;steel[13]=steel[13]+1;" href="javascript:void(0);" id="fast" class="btn btn-block"><i style="font-size:24px" class="fa">&#xf067;</i> Add to chart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card" style="width:100%">
+                        <img class="card-img-top" src="img/steelParts.jpg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h3 class="card-title">Product Name</h3>
+                            <p class="card-text">Some example text some example text.</p>
+                            <p>Price {{steelPrice[14]}}<i style="font-size:14px" class="fa">&#xf153;</i></p>
+                            <ul>
+                                <li> Spec 1</li>
+                                <li> Spec 2</li>
+                                <li> Spec 3</li>
+                                <li> Spec 4</li>
+                            </ul>
+                            <a ng-click="count = count + 1;steel[14]=steel[14]+1;" href="javascript:void(0);" id="fast" class="btn btn-block"><i style="font-size:24px" class="fa">&#xf067;</i> Add to chart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card" style="width:100%">
+                        <img class="card-img-top" src="img/steelParts.jpg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h3 class="card-title">Product Name</h3>
+                            <p class="card-text">Some example text some example text.</p>
+                            <p>Price {{steelPrice[15]}}<i style="font-size:14px" class="fa">&#xf153;</i></p>
+                            <ul>
+                                <li> Spec 1</li>
+                                <li> Spec 2</li>
+                                <li> Spec 3</li>
+                                <li> Spec 4</li>
+                            </ul>
+                            <a ng-click="count = count + 1;steel[15]=steel[15]+1;" href="javascript:void(0);" id="fast" class="btn btn-block"><i style="font-size:24px" class="fa">&#xf067;</i> Add to chart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <br>
+        <!-- SILVER -->
+        <div class="container-fluid">
+            <div id="silverWire" class="headerMOJ">
+                <h2>Silver Wire</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga aliquid, quas eveniet consectetur porro, sed eaque sint voluptates magnam itaque quibusdam vel sapiente aut unde possimus sunt ad molestias deleniti.</p>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card" style="width:100%">
+                        <img class="card-img-top" src="img/silverWire.jpg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h3 class="card-title">Product Name</h3>
+                            <p class="card-text">Some example text some example text.</p>
+                            <p>Price {{silverPrice[0]}}<i style="font-size:14px" class="fa">&#xf153;</i></p>
+                            <ul>
+                                <li> Spec 1</li>
+                                <li> Spec 2</li>
+                                <li> Spec 3</li>
+                                <li> Spec 4</li>
+                            </ul>
+                            <a ng-click="count = count + 1;silver[0]=silver[0]+1;" href="javascript:void(0);" id="fast" class="btn btn-block"><i style="font-size:24px" class="fa">&#xf067;</i> Add to chart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card" style="width:100%">
+                        <img class="card-img-top" src="img/silverWire.jpg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h3 class="card-title">Product Name</h3>
+                            <p class="card-text">Some example text some example text.</p>
+                            <p>Price {{silverPrice[1]}}<i style="font-size:14px" class="fa">&#xf153;</i></p>
+                            <ul>
+                                <li> Spec 1</li>
+                                <li> Spec 2</li>
+                                <li> Spec 3</li>
+                                <li> Spec 4</li>
+                            </ul>
+                            <a ng-click="count = count + 1;silver[1]=silver[1]+1;" href="javascript:void(0);" id="fast" class="btn btn-block"><i style="font-size:24px" class="fa">&#xf067;</i> Add to chart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card" style="width:100%">
+                        <img class="card-img-top" src="img/silverWire.jpg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h3 class="card-title">Product Name</h3>
+                            <p class="card-text">Some example text some example text.</p>
+                            <p>Price {{silverPrice[2]}}<i style="font-size:14px" class="fa">&#xf153;</i></p>
+                            <ul>
+                                <li> Spec 1</li>
+                                <li> Spec 2</li>
+                                <li> Spec 3</li>
+                                <li> Spec 4</li>
+                            </ul>
+                            <a ng-click="count = count + 1;silver[2]=silver[2]+1;" href="javascript:void(0);" id="fast" class="btn btn-block"><i style="font-size:24px" class="fa">&#xf067;</i> Add to chart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card" style="width:100%">
+                        <img class="card-img-top" src="img/silverWire.jpg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h3 class="card-title">Product Name</h3>
+                            <p class="card-text">Some example text some example text.</p>
+                            <p>Price {{silverPrice[3]}}<i style="font-size:14px" class="fa">&#xf153;</i></p>
+                            <ul>
+                                <li> Spec 1</li>
+                                <li> Spec 2</li>
+                                <li> Spec 3</li>
+                                <li> Spec 4</li>
+                            </ul>
+                            <a ng-click="count = count + 1;silver[3]=silver[3]+1;" href="javascript:void(0);" id="fast" class="btn btn-block"><i style="font-size:24px" class="fa">&#xf067;</i> Add to chart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+
+            <div id="silverCasting" class="headerMOJ">
+                <h2>Silver Castings</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga aliquid, quas eveniet consectetur porro, sed eaque sint voluptates magnam itaque quibusdam vel sapiente aut unde possimus sunt ad molestias deleniti.</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto illum officia eum non accusamus fugit ab distinctio qui dolore aut totam, omnis ducimus vel aspernatur aperiam nemo, sed nesciunt maxime.</p>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card" style="width:100%">
+                        <img class="card-img-top" src="img/silverCasting.jpg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h3 class="card-title">Product Name</h3>
+                            <p class="card-text">Some example text some example text.</p>
+                            <p>Price {{silverPrice[4]}}<i style="font-size:14px" class="fa">&#xf153;</i></p>
+                            <ul>
+                                <li> Spec 1</li>
+                                <li> Spec 2</li>
+                                <li> Spec 3</li>
+                                <li> Spec 4</li>
+                            </ul>
+                            <a ng-click="count = count + 1;silver[4]=silver[4]+1;" href="javascript:void(0);" id="fast" class="btn btn-block"><i style="font-size:24px" class="fa">&#xf067;</i> Add to chart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card" style="width:100%">
+                        <img class="card-img-top" src="img/silverCasting.jpg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h3 class="card-title">Product Name</h3>
+                            <p class="card-text">Some example text some example text.</p>
+                            <p>Price {{silverPrice[5]}}<i style="font-size:14px" class="fa">&#xf153;</i></p>
+                            <ul>
+                                <li> Spec 1</li>
+                                <li> Spec 2</li>
+                                <li> Spec 3</li>
+                                <li> Spec 4</li>
+                            </ul>
+                            <a ng-click="count = count + 1;silver[5]=silver[5]+1;" href="javascript:void(0);" id="fast" class="btn btn-block"><i style="font-size:24px" class="fa">&#xf067;</i> Add to chart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card" style="width:100%">
+                        <img class="card-img-top" src="img/silverCasting.jpg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h3 class="card-title">Product Name</h3>
+                            <p class="card-text">Some example text some example text.</p>
+                            <p>Price {{silverPrice[6]}}<i style="font-size:14px" class="fa">&#xf153;</i></p>
+                            <ul>
+                                <li> Spec 1</li>
+                                <li> Spec 2</li>
+                                <li> Spec 3</li>
+                                <li> Spec 4</li>
+                            </ul>
+                            <a ng-click="count = count + 1;silver[6]=silver[6]+1;" href="javascript:void(0);" id="fast" class="btn btn-block"><i style="font-size:24px" class="fa">&#xf067;</i> Add to chart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card" style="width:100%">
+                        <img class="card-img-top" src="img/silverCasting.jpg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h3 class="card-title">Product Name</h3>
+                            <p class="card-text">Some example text some example text.</p>
+                            <p>Price {{silverPrice[7]}}<i style="font-size:14px" class="fa">&#xf153;</i></p>
+                            <ul>
+                                <li> Spec 1</li>
+                                <li> Spec 2</li>
+                                <li> Spec 3</li>
+                                <li> Spec 4</li>
+                            </ul>
+                            <a ng-click="count = count + 1;silver[7]=silver[7]+1;" href="javascript:void(0);" id="fast" class="btn btn-block"><i style="font-size:24px" class="fa">&#xf067;</i> Add to chart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+
+            <div id="electronics" class="headerMOJ">
+                <h2>Silver Electronics</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga aliquid, quas eveniet consectetur porro, sed</p>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card" style="width:100%">
+                        <img class="card-img-top" src="img/silverElectronics.jpg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h3 class="card-title">Product Name</h3>
+                            <p class="card-text">Some example text some example text.</p>
+                            <p>Price {{silverPrice[8]}}<i style="font-size:14px" class="fa">&#xf153;</i></p>
+                            <ul>
+                                <li> Spec 1</li>
+                                <li> Spec 2</li>
+                                <li> Spec 3</li>
+                                <li> Spec 4</li>
+                            </ul>
+                            <a ng-click="count = count + 1;silver[8]=silver[8]+1;" href="javascript:void(0);" id="fast" class="btn btn-block"><i style="font-size:24px" class="fa">&#xf067;</i> Add to chart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card" style="width:100%">
+                        <img class="card-img-top" src="img/silverElectronics.jpg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h3 class="card-title">Product Name</h3>
+                            <p class="card-text">Some example text some example text.</p>
+                            <p>Price {{silverPrice[9]}}<i style="font-size:14px" class="fa">&#xf153;</i></p>
+                            <ul>
+                                <li> Spec 1</li>
+                                <li> Spec 2</li>
+                                <li> Spec 3</li>
+                                <li> Spec 4</li>
+                            </ul>
+                            <a ng-click="count = count + 1;silver[9]=silver[9]+1;" href="javascript:void(0);" id="fast" class="btn btn-block"><i style="font-size:24px" class="fa">&#xf067;</i> Add to chart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card" style="width:100%">
+                        <img class="card-img-top" src="img/silverElectronics.jpg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h3 class="card-title">Product Name</h3>
+                            <p class="card-text">Some example text some example text.</p>
+                            <p>Price {{silverPrice[10]}}<i style="font-size:14px" class="fa">&#xf153;</i></p>
+                            <ul>
+                                <li> Spec 1</li>
+                                <li> Spec 2</li>
+                                <li> Spec 3</li>
+                                <li> Spec 4</li>
+                            </ul>
+                            <a ng-click="count = count + 1;silver[10]=silver[10]+1;" href="javascript:void(0);" id="fast" class="btn btn-block"><i style="font-size:24px" class="fa">&#xf067;</i> Add to chart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card" style="width:100%">
+                        <img class="card-img-top" src="img/silverElectronics.jpg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h3 class="card-title">Product Name</h3>
+                            <p class="card-text">Some example text some example text.</p>
+                            <p>Price {{silverPrice[11]}}<i style="font-size:14px" class="fa">&#xf153;</i></p>
+                            <ul>
+                                <li> Spec 1</li>
+                                <li> Spec 2</li>
+                                <li> Spec 3</li>
+                                <li> Spec 4</li>
+                            </ul>
+                            <a ng-click="count = count + 1;silver[11]=silver[11]+1;" href="javascript:void(0);" id="fast" class="btn btn-block"><i style="font-size:24px" class="fa">&#xf067;</i> Add to chart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+
+            <div id="silverVesels" class="headerMOJ">
+                <h2>Silver Vessels</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga aliquid, quas eveniet consectetur porro, sed</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat molestias magnam quis porro autem voluptatem, illum tenetur ex reiciendis! Ipsam corrupti temporibus ea at quae tempora ad suscipit sint ratione!</p>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card" style="width:100%">
+                        <img class="card-img-top" src="img/silverVesel.jpg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h3 class="card-title">Product Name</h3>
+                            <p class="card-text">Some example text some example text.</p>
+                            <p>Price {{silverPrice[12]}}<i style="font-size:14px" class="fa">&#xf153;</i></p>
+                            <ul>
+                                <li> Spec 1</li>
+                                <li> Spec 2</li>
+                                <li> Spec 3</li>
+                                <li> Spec 4</li>
+                            </ul>
+                            <a ng-click="count = count + 1;silver[12]=silver[12]+1;" href="javascript:void(0);" id="fast" class="btn btn-block"><i style="font-size:24px" class="fa">&#xf067;</i> Add to chart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card" style="width:100%">
+                        <img class="card-img-top" src="img/silverVesel.jpg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h3 class="card-title">Product Name</h3>
+                            <p class="card-text">Some example text some example text.</p>
+                            <p>Price {{silverPrice[13]}}<i style="font-size:14px" class="fa">&#xf153;</i></p>
+                            <ul>
+                                <li> Spec 1</li>
+                                <li> Spec 2</li>
+                                <li> Spec 3</li>
+                                <li> Spec 4</li>
+                            </ul>
+                            <a ng-click="count = count + 1;silver[13]=silver[13]+1;" href="javascript:void(0);" id="fast" class="btn btn-block"><i style="font-size:24px" class="fa">&#xf067;</i> Add to chart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card" style="width:100%">
+                        <img class="card-img-top" src="img/silverVesel.jpg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h3 class="card-title">Product Name</h3>
+                            <p class="card-text">Some example text some example text.</p>
+                            <p>Price {{silverPrice[14]}}<i style="font-size:14px" class="fa">&#xf153;</i></p>
+                            <ul>
+                                <li> Spec 1</li>
+                                <li> Spec 2</li>
+                                <li> Spec 3</li>
+                                <li> Spec 4</li>
+                            </ul>
+                            <a ng-click="count = count + 1;silver[14]=silver[14]+1;" href="javascript:void(0);" id="fast" class="btn btn-block"><i style="font-size:24px" class="fa">&#xf067;</i> Add to chart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card" style="width:100%">
+                        <img class="card-img-top" src="img/silverVesel.jpg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h3 class="card-title">Product Name</h3>
+                            <p class="card-text">Some example text some example text.</p>
+                            <p>Price {{silverPrice[15]}}<i style="font-size:14px" class="fa">&#xf153;</i></p>
+                            <ul>
+                                <li> Spec 1</li>
+                                <li> Spec 2</li>
+                                <li> Spec 3</li>
+                                <li> Spec 4</li>
+                            </ul>
+                            <a ng-click="count = count + 1;silver[15]=silver[15]+1;" href="javascript:void(0);" id="fast" class="btn btn-block"><i style="font-size:24px" class="fa">&#xf067;</i> Add to chart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+
+            <div id="silverJewlry" class="headerMOJ">
+                <h2>Silver Jewlery</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga aliquid, quas eveniet consectetur porro, sed</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat molestias magnam quis porro autem voluptatem, illum tenetur ex reiciendis! Ipsam corrupti temporibus ea at quae tempora ad suscipit sint ratione!</p>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card" style="width:100%">
+                        <img class="card-img-top" src="img/silverJewlery.jpg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h3 class="card-title">Product Name</h3>
+                            <p class="card-text">Some example text some example text.</p>
+                            <p>Price {{silverPrice[16]}}<i style="font-size:14px" class="fa">&#xf153;</i></p>
+                            <ul>
+                                <li> Spec 1</li>
+                                <li> Spec 2</li>
+                                <li> Spec 3</li>
+                                <li> Spec 4</li>
+                            </ul>
+                            <a ng-click="count = count + 1;silver[16]=silver[16]+1;" href="javascript:void(0);" id="fast" class="btn btn-block"><i style="font-size:24px" class="fa">&#xf067;</i> Add to chart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card" style="width:100%">
+                        <img class="card-img-top" src="img/silverJewlery.jpg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h3 class="card-title">Product Name</h3>
+                            <p class="card-text">Some example text some example text.</p>
+                            <p>Price {{silverPrice[17]}}<i style="font-size:14px" class="fa">&#xf153;</i></p>
+                            <ul>
+                                <li> Spec 1</li>
+                                <li> Spec 2</li>
+                                <li> Spec 3</li>
+                                <li> Spec 4</li>
+                            </ul>
+                            <a ng-click="count = count + 1;silver[17]=silver[17]+1;" href="javascript:void(0);" id="fast" class="btn btn-block"><i style="font-size:24px" class="fa">&#xf067;</i> Add to chart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card" style="width:100%">
+                        <img class="card-img-top" src="img/silverJewlery.jpg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h3 class="card-title">Product Name</h3>
+                            <p class="card-text">Some example text some example text.</p>
+                            <p>Price {{silverPrice[18]}}<i style="font-size:14px" class="fa">&#xf153;</i></p>
+                            <ul>
+                                <li> Spec 1</li>
+                                <li> Spec 2</li>
+                                <li> Spec 3</li>
+                                <li> Spec 4</li>
+                            </ul>
+                            <a ng-click="count = count + 1;silver[18]=silver[18]+1;" href="javascript:void(0);" id="fast" class="btn btn-block"><i style="font-size:24px" class="fa">&#xf067;</i> Add to chart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card" style="width:100%">
+                        <img class="card-img-top" src="img/silverJewlery.jpg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h3 class="card-title">Product Name</h3>
+                            <p class="card-text">Some example text some example text.</p>
+                            <p>Price {{silverPrice[19]}}<i style="font-size:14px" class="fa">&#xf153;</i></p>
+                            <ul>
+                                <li> Spec 1</li>
+                                <li> Spec 2</li>
+                                <li> Spec 3</li>
+                                <li> Spec 4</li>
+                            </ul>
+                            <a ng-click="count = count + 1;silver[19]=silver[19]+1;" href="javascript:void(0);" id="fast" class="btn btn-block"><i style="font-size:24px" class="fa">&#xf067;</i> Add to chart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <br><br>
+
+
+
+    <!-- FAST CONNTACT -->
+    <button id="contactMOJ" type="button" class="btn btn-block" data-toggle="modal" data-target="#myModal2"><h2><i class="fa fa-pencil-square-o" style="font-size:36px"></i> Connect with us <strong>FAST</strong></h2></button>
+
+    <!-- The Modal -->
+    <div class="modal" id="myModal2">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Connect with us <strong>FAST</strong></h4>
+                    <button id="zatvori" type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <label for="emailac">Your email</label><br>
+                    <input type="email" class="form-control" id="emailac"><br>
+
+                    <label for="textac">Write us a message</label>
+                    <textarea class="form-control" style="resize: none; width: 100%" name="" id="textac" cols="30" rows="10"></textarea><br>
+
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="submit" id="fast" class="btn btn-block "><strong>Send</strong></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <!-- SHOPING MODAL -->
+    <div class="modal fade" id="myModal">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Shopping Orders</h4>
+                    <button type="button" class="close" style="color:white" data-dismiss="modal"><i style="font-size:24px" class="fa">&#xf00d;</i></button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <h2 ng-hide="coppSum() + steelSum() + silverSum()"><strong>None So Far</strong></h2>
+                    <ol id="listacMOJ">
+                        <!-- COPPER -->
+                        <li ng-show="copper[0]">
+                            <h4><small>Type 1</small> <strong>Copper Wire</strong> <small>x<strong>{{copper[0]}}</strong> Price is:</small><strong> {{(copper[0]*copperPrice[0])}}</strong><i style="font-size:14px" class="fa">&#xf153;</i>
+                                <button type="button" ng-click="count = count - copper[0];copper[0]=0" class="btn btn-danger btn-sm float-right"><i style="font-size:14px" class="fa">&#xf00d;</i> Dismiss</button></h4>
+                        </li>
+
+                        <li ng-show="copper[1]">
+                            <h4><small>Type 2</small> <strong>Copper Wire</strong> <small>x<strong>{{copper[1]}}</strong> Price is:</small><strong> {{(copper[1]*copperPrice[1])}}</strong><i style="font-size:14px" class="fa">&#xf153;</i>
+                                <button type="button" ng-click="count = count - copper[1];copper[1]=0" class="btn btn-danger btn-sm float-right"><i style="font-size:14px" class="fa">&#xf00d;</i> Dismiss</button></h4>
+                        </li>
+
+                        <li ng-show="copper[2]">
+                            <h4><small>Type 3</small> <strong>Copper Wire</strong> <small>x<strong>{{copper[2]}}</strong> Price is:</small><strong> {{(copper[2]*copperPrice[2])}}</strong><i style="font-size:14px" class="fa">&#xf153;</i>
+                                <button type="button" ng-click="count = count - copper[2];copper[2]=0" class="btn btn-danger btn-sm float-right"><i style="font-size:14px" class="fa">&#xf00d;</i> Dismiss</button></h4>
+                        </li>
+
+                        <li ng-show="copper[3]">
+                            <h4><small>Type 4</small> <strong>Copper Wire</strong> <small>x<strong>{{copper[3]}}</strong> Price is:</small><strong> {{(copper[3]*copperPrice[3])}}</strong><i style="font-size:14px" class="fa">&#xf153;</i>
+                                <button type="button" ng-click="count = count - copper[3];copper[3]=0" class="btn btn-danger btn-sm float-right"><i style="font-size:14px" class="fa">&#xf00d;</i> Dismiss</button></h4>
+                        </li>
+
+                        <li ng-show="copper[4]">
+                            <h4><small>Type 1</small> <strong>Copper Sheet</strong> <small>x<strong>{{copper[4]}}</strong> Price is:</small><strong> {{(copper[4]*copperPrice[4])}}</strong><i style="font-size:14px" class="fa">&#xf153;</i>
+                                <button type="button" ng-click="count = count - copper[4];copper[4]=0" class="btn btn-danger btn-sm float-right"><i style="font-size:14px" class="fa">&#xf00d;</i> Dismiss</button></h4>
+                        </li>
+
+                        <li ng-show="copper[5]">
+                            <h4><small>Type 2</small> <strong>Copper Sheet</strong> <small>x<strong>{{copper[5]}}</strong> Price is:</small><strong> {{(copper[5]*copperPrice[5])}}</strong><i style="font-size:14px" class="fa">&#xf153;</i>
+                                <button type="button" ng-click="count = count - copper[5];copper[5]=0" class="btn btn-danger btn-sm float-right"><i style="font-size:14px" class="fa">&#xf00d;</i> Dismiss</button></h4>
+                        </li>
+
+                        <li ng-show="copper[6]">
+                            <h4><small>Type 3</small> <strong>Copper Sheet</strong> <small>x<strong>{{copper[6]}}</strong> Price is:</small><strong> {{(copper[6]*copperPrice[6])}}</strong><i style="font-size:14px" class="fa">&#xf153;</i>
+                                <button type="button" ng-click="count = count - copper[6];copper[6]=0" class="btn btn-danger btn-sm float-right"><i style="font-size:14px" class="fa">&#xf00d;</i> Dismiss</button></h4>
+                        </li>
+
+                        <li ng-show="copper[7]">
+                            <h4><small>Type 4</small> <strong>Copper Sheet</strong> <small>x<strong>{{copper[7]}}</strong> Price is:</small><strong> {{(copper[7]*copperPrice[7])}}</strong><i style="font-size:14px" class="fa">&#xf153;</i>
+                                <button type="button" ng-click="count = count - copper[7];copper[7]=0" class="btn btn-danger btn-sm float-right"><i style="font-size:14px" class="fa">&#xf00d;</i> Dismiss</button></h4>
+                        </li>
+
+                        <li ng-show="copper[8]">
+                            <h4><small>Type 1</small> <strong>Copper Casting</strong> <small>x<strong>{{copper[8]}}</strong> Price is:</small><strong> {{(copper[8]*copperPrice[8])}}</strong><i style="font-size:14px" class="fa">&#xf153;</i>
+                                <button type="button" ng-click="count = count - copper[8];copper[8]=0" class="btn btn-danger btn-sm float-right"><i style="font-size:14px" class="fa">&#xf00d;</i> Dismiss</button></h4>
+                        </li>
+
+                        <li ng-show="copper[9]">
+                            <h4><small>Type 2</small> <strong>Copper Casting</strong> <small>x<strong>{{copper[9]}}</strong> Price is:</small><strong> {{(copper[9]*copperPrice[9])}}</strong><i style="font-size:14px" class="fa">&#xf153;</i>
+                                <button type="button" ng-click="count = count - copper[9];copper[9]=0" class="btn btn-danger btn-sm float-right"><i style="font-size:14px" class="fa">&#xf00d;</i> Dismiss</button></h4>
+                        </li>
+
+                        <li ng-show="copper[10]">
+                            <h4><small>Type 3</small> <strong>Copper Casting</strong> <small>x<strong>{{copper[10]}}</strong> Price is:</small><strong> {{(copper[10]*copperPrice[10])}}</strong><i style="font-size:14px" class="fa">&#xf153;</i>
+                                <button type="button" ng-click="count = count - copper[10];copper[10]=0" class="btn btn-danger btn-sm float-right"><i style="font-size:14px" class="fa">&#xf00d;</i> Dismiss</button></h4>
+                        </li>
+
+                        <li ng-show="copper[11]">
+                            <h4><small>Type 4</small> <strong>Copper Casting</strong> <small>x<strong>{{copper[11]}}</strong> Price is:</small><strong> {{(copper[11]*copperPrice[11])}}</strong><i style="font-size:14px" class="fa">&#xf153;</i>
+                                <button type="button" ng-click="count = count - copper[11];copper[11]=0" class="btn btn-danger btn-sm float-right"><i style="font-size:14px" class="fa">&#xf00d;</i> Dismiss</button></h4>
+                        </li>
+
+                        <li ng-show="copper[12]">
+                            <h4><small>Type 1</small> <strong>Copper Dust</strong> <small>x<strong>{{copper[12]}}</strong> Price is:</small><strong> {{(copper[12]*copperPrice[12])}}</strong><i style="font-size:14px" class="fa">&#xf153;</i>
+                                <button type="button" ng-click="count = count - copper[12];copper[12]=0" class="btn btn-danger btn-sm float-right"><i style="font-size:14px" class="fa">&#xf00d;</i> Dismiss</button></h4>
+                        </li>
+
+                        <li ng-show="copper[13]">
+                            <h4><small>Type 2</small> <strong>Copper Dust</strong> <small>x<strong>{{copper[13]}}</strong> Price is:</small><strong> {{(copper[13]*copperPrice[13])}}</strong><i style="font-size:14px" class="fa">&#xf153;</i>
+                                <button type="button" ng-click="count = count - copper[13];copper[13]=0" class="btn btn-danger btn-sm float-right"><i style="font-size:14px" class="fa">&#xf00d;</i> Dismiss</button></h4>
+                        </li>
+
+                        <li ng-show="copper[14]">
+                            <h4><small>Type 3</small> <strong>Copper Dust</strong> <small>x<strong>{{copper[14]}}</strong> Price is:</small><strong> {{(copper[14]*copperPrice[14])}}</strong><i style="font-size:14px" class="fa">&#xf153;</i>
+                                <button type="button" ng-click="count = count - copper[14];copper[14]=0" class="btn btn-danger btn-sm float-right"><i style="font-size:14px" class="fa">&#xf00d;</i> Dismiss</button></h4>
+                        </li>
+
+                        <li ng-show="copper[15]">
+                            <h4><small>Type 4</small> <strong>Copper Dust</strong> <small>x<strong>{{copper[15]}}</strong> Price is:</small><strong> {{(copper[15]*copperPrice[15])}}</strong><i style="font-size:14px" class="fa">&#xf153;</i>
+                                <button type="button" ng-click="count = count - copper[15];copper[15]=0" class="btn btn-danger btn-sm float-right"><i style="font-size:14px" class="fa">&#xf00d;</i> Dismiss</button></h4>
+                        </li>
+
+                        <!-- STEEL -->
+                        <li ng-show="steel[0]">
+                            <h4><small>Type 1</small> <strong>Steel Wire</strong> <small>x<strong>{{steel[0]}}</strong> Price is:</small><strong> {{(steel[0]*steelPrice[0])}}</strong><i style="font-size:14px" class="fa">&#xf153;</i>
+                                <button type="button" ng-click="count = count - steel[0];steel[0]=0" class="btn btn-danger btn-sm float-right"><i style="font-size:14px" class="fa">&#xf00d;</i> Dismiss</button></h4>
+                        </li>
+
+                        <li ng-show="steel[1]">
+                            <h4><small>Type 2</small> <strong>Steel Wire</strong> <small>x<strong>{{steel[1]}}</strong> Price is:</small><strong> {{(steel[1]*steelPrice[1])}}</strong><i style="font-size:14px" class="fa">&#xf153;</i>
+                                <button type="button" ng-click="count = count - steel[1];steel[1]=0" class="btn btn-danger btn-sm float-right"><i style="font-size:14px" class="fa">&#xf00d;</i> Dismiss</button></h4>
+                        </li>
+
+                        <li ng-show="steel[2]">
+                            <h4><small>Type 3</small> <strong>Steel Wire</strong> <small>x<strong>{{steel[2]}}</strong> Price is:</small><strong> {{(steel[2]*steelPrice[2])}}</strong><i style="font-size:14px" class="fa">&#xf153;</i>
+                                <button type="button" ng-click="count = count - steel[2];steel[2]=0" class="btn btn-danger btn-sm float-right"><i style="font-size:14px" class="fa">&#xf00d;</i> Dismiss</button></h4>
+                        </li>
+
+                        <li ng-show="steel[3]">
+                            <h4><small>Type 4</small> <strong>Steel Wire</strong> <small>x<strong>{{steel[3]}}</strong> Price is:</small><strong> {{(steel[3]*steelPrice[3])}}</strong><i style="font-size:14px" class="fa">&#xf153;</i>
+                                <button type="button" ng-click="count = count - steel[3];steel[3]=0" class="btn btn-danger btn-sm float-right"><i style="font-size:14px" class="fa">&#xf00d;</i> Dismiss</button></h4>
+                        </li>
+
+                        <li ng-show="steel[4]">
+                            <h4><small>Type 1</small> <strong>Steel Sheet</strong> <small>x<strong>{{steel[4]}}</strong> Price is:</small><strong> {{(steel[4]*steelPrice[4])}}</strong><i style="font-size:14px" class="fa">&#xf153;</i>
+                                <button type="button" ng-click="count = count - steel[4];steel[4]=0" class="btn btn-danger btn-sm float-right"><i style="font-size:14px" class="fa">&#xf00d;</i> Dismiss</button></h4>
+                        </li>
+
+                        <li ng-show="steel[5]">
+                            <h4><small>Type 2</small> <strong>Steel Sheet</strong> <small>x<strong>{{steel[5]}}</strong> Price is:</small><strong> {{(steel[5]*steelPrice[5])}}</strong><i style="font-size:14px" class="fa">&#xf153;</i>
+                                <button type="button" ng-click="count = count - steel[5];steel[5]=0" class="btn btn-danger btn-sm float-right"><i style="font-size:14px" class="fa">&#xf00d;</i> Dismiss</button></h4>
+                        </li>
+
+                        <li ng-show="steel[6]">
+                            <h4><small>Type 3</small> <strong>Steel Sheet</strong> <small>x<strong>{{steel[6]}}</strong> Price is:</small><strong> {{(steel[6]*steelPrice[6])}}</strong><i style="font-size:14px" class="fa">&#xf153;</i>
+                                <button type="button" ng-click="count = count - steel[6];steel[6]=0" class="btn btn-danger btn-sm float-right"><i style="font-size:14px" class="fa">&#xf00d;</i> Dismiss</button></h4>
+                        </li>
+
+                        <li ng-show="steel[7]">
+                            <h4><small>Type 4</small> <strong>Steel Sheet</strong> <small>x<strong>{{steel[7]}}</strong> Price is:</small><strong> {{(steel[7]*steelPrice[7])}}</strong><i style="font-size:14px" class="fa">&#xf153;</i>
+                                <button type="button" ng-click="count = count - steel[7];steel[7]=0" class="btn btn-danger btn-sm float-right"><i style="font-size:14px" class="fa">&#xf00d;</i> Dismiss</button></h4>
+                        </li>
+
+                        <li ng-show="steel[8]">
+                            <h4><small>Type 1</small> <strong>Steel Chains</strong> <small>x<strong>{{steel[8]}}</strong> Price is:</small><strong> {{(steel[8]*steelPrice[8])}}</strong><i style="font-size:14px" class="fa">&#xf153;</i>
+                                <button type="button" ng-click="count = count - steel[8];steel[8]=0" class="btn btn-danger btn-sm float-right"><i style="font-size:14px" class="fa">&#xf00d;</i> Dismiss</button></h4>
+                        </li>
+
+                        <li ng-show="steel[9]">
+                            <h4><small>Type 2</small> <strong>Steel Chains</strong> <small>x<strong>{{steel[9]}}</strong> Price is:</small><strong> {{(steel[9]*steelPrice[9])}}</strong><i style="font-size:14px" class="fa">&#xf153;</i>
+                                <button type="button" ng-click="count = count - steel[9];steel[9]=0" class="btn btn-danger btn-sm float-right"><i style="font-size:14px" class="fa">&#xf00d;</i> Dismiss</button></h4>
+                        </li>
+
+                        <li ng-show="steel[10]">
+                            <h4><small>Type 3</small> <strong>Steel Chains</strong> <small>x<strong>{{steel[10]}}</strong> Price is:</small><strong> {{(steel[10]*steelPrice[10])}}</strong><i style="font-size:14px" class="fa">&#xf153;</i>
+                                <button type="button" ng-click="count = count - steel[10];steel[10]=0" class="btn btn-danger btn-sm float-right"><i style="font-size:14px" class="fa">&#xf00d;</i> Dismiss</button></h4>
+                        </li>
+
+                        <li ng-show="steel[11]">
+                            <h4><small>Type 4</small> <strong>Steel Chains</strong> <small>x<strong>{{steel[11]}}</strong> Price is:</small><strong> {{(steel[11]*steelPrice[11])}}</strong><i style="font-size:14px" class="fa">&#xf153;</i>
+                                <button type="button" ng-click="count = count - steel[11];steel[11]=0" class="btn btn-danger btn-sm float-right"><i style="font-size:14px" class="fa">&#xf00d;</i> Dismiss</button></h4>
+                        </li>
+
+
+                        <li ng-show="steel[12]">
+                            <h4><small>Type 1</small> <strong>Machine Parts</strong> <small>x<strong>{{steel[12]}}</strong> Price is:</small><strong> {{(steel[12]*steelPrice[12])}}</strong><i style="font-size:14px" class="fa">&#xf153;</i>
+                                <button type="button" ng-click="count = count - steel[12];steel[12]=0" class="btn btn-danger btn-sm float-right"><i style="font-size:14px" class="fa">&#xf00d;</i> Dismiss</button></h4>
+                        </li>
+
+                        <li ng-show="steel[13]">
+                            <h4><small>Type 2</small> <strong>Machine Parts</strong> <small>x<strong>{{steel[13]}}</strong> Price is:</small><strong> {{(steel[13]*steelPrice[13])}}</strong><i style="font-size:14px" class="fa">&#xf153;</i>
+                                <button type="button" ng-click="count = count - steel[13];steel[13]=0" class="btn btn-danger btn-sm float-right"><i style="font-size:14px" class="fa">&#xf00d;</i> Dismiss</button></h4>
+                        </li>
+
+                        <li ng-show="steel[14]">
+                            <h4><small>Type 3</small> <strong>Machine Parts</strong> <small>x<strong>{{steel[14]}}</strong> Price is:</small><strong> {{(steel[14]*steelPrice[14])}}</strong><i style="font-size:14px" class="fa">&#xf153;</i>
+                                <button type="button" ng-click="count = count - steel[14];steel[14]=0" class="btn btn-danger btn-sm float-right"><i style="font-size:14px" class="fa">&#xf00d;</i> Dismiss</button></h4>
+                        </li>
+
+                        <li ng-show="steel[15]">
+                            <h4><small>Type 4</small> <strong>Machine Parts</strong> <small>x<strong>{{steel[15]}}</strong> Price is:</small><strong> {{(steel[15]*steelPrice[15])}}</strong><i style="font-size:14px" class="fa">&#xf153;</i>
+                                <button type="button" ng-click="count = count - steel[15];steel[15]=0" class="btn btn-danger btn-sm float-right"><i style="font-size:14px" class="fa">&#xf00d;</i> Dismiss</button></h4>
+                        </li>
+
+                        <!-- SILVER -->
+                        <li ng-show="silver[0]">
+                            <h4><small>Type 1</small> <strong>Silver Wire</strong> <small>x<strong>{{silver[0]}}</strong> Price is:</small><strong> {{(silver[0]*silverPrice[0])}}</strong><i style="font-size:14px" class="fa">&#xf153;</i>
+                                <button type="button" ng-click="count = count - silver[0];silver[0]=0" class="btn btn-danger btn-sm float-right"><i style="font-size:14px" class="fa">&#xf00d;</i> Dismiss</button></h4>
+                        </li>
+
+                        <li ng-show="silver[1]">
+                            <h4><small>Type 2</small> <strong>Silver Wire</strong> <small>x<strong>{{silver[1]}}</strong> Price is:</small><strong> {{(silver[1]*silverPrice[1])}}</strong><i style="font-size:14px" class="fa">&#xf153;</i>
+                                <button type="button" ng-click="count = count - silver[1];silver[1]=0" class="btn btn-danger btn-sm float-right"><i style="font-size:14px" class="fa">&#xf00d;</i> Dismiss</button></h4>
+                        </li>
+
+                        <li ng-show="silver[2]">
+                            <h4><small>Type 3</small> <strong>Silver Wire</strong> <small>x<strong>{{silver[2]}}</strong> Price is:</small><strong> {{(silver[2]*silverPrice[2])}}</strong><i style="font-size:14px" class="fa">&#xf153;</i>
+                                <button type="button" ng-click="count = count - silver[2];silver[2]=0" class="btn btn-danger btn-sm float-right"><i style="font-size:14px" class="fa">&#xf00d;</i> Dismiss</button></h4>
+                        </li>
+
+                        <li ng-show="silver[3]">
+                            <h4><small>Type 4</small> <strong>Silver Wire</strong> <small>x<strong>{{silver[3]}}</strong> Price is:</small><strong> {{(silver[3]*silverPrice[3])}}</strong><i style="font-size:14px" class="fa">&#xf153;</i>
+                                <button type="button" ng-click="count = count - silver[3];silver[3]=0" class="btn btn-danger btn-sm float-right"><i style="font-size:14px" class="fa">&#xf00d;</i> Dismiss</button></h4>
+                        </li>
+
+                        <li ng-show="silver[4]">
+                            <h4><small>Type 1</small> <strong>Silver Casting</strong> <small>x<strong>{{silver[4]}}</strong> Price is:</small><strong> {{(silver[4]*silverPrice[4])}}</strong><i style="font-size:14px" class="fa">&#xf153;</i>
+                                <button type="button" ng-click="count = count - silver[4];silver[4]=0" class="btn btn-danger btn-sm float-right"><i style="font-size:14px" class="fa">&#xf00d;</i> Dismiss</button></h4>
+                        </li>
+
+                        <li ng-show="silver[5]">
+                            <h4><small>Type 2</small> <strong>Silver Casting</strong> <small>x<strong>{{silver[5]}}</strong> Price is:</small><strong> {{(silver[5]*silverPrice[5])}}</strong><i style="font-size:14px" class="fa">&#xf153;</i>
+                                <button type="button" ng-click="count = count - silver[5];silver[5]=0" class="btn btn-danger btn-sm float-right"><i style="font-size:14px" class="fa">&#xf00d;</i> Dismiss</button></h4>
+                        </li>
+
+                        <li ng-show="silver[6]">
+                            <h4><small>Type 3</small> <strong>Silver Casting</strong> <small>x<strong>{{silver[6]}}</strong> Price is:</small><strong> {{(silver[6]*silverPrice[6])}}</strong><i style="font-size:14px" class="fa">&#xf153;</i>
+                                <button type="button" ng-click="count = count - silver[6];silver[6]=0" class="btn btn-danger btn-sm float-right"><i style="font-size:14px" class="fa">&#xf00d;</i> Dismiss</button></h4>
+                        </li>
+
+                        <li ng-show="silver[7]">
+                            <h4><small>Type 4</small> <strong>Silver Casting</strong> <small>x<strong>{{silver[7]}}</strong> Price is:</small><strong> {{(silver[7]*silverPrice[7])}}</strong><i style="font-size:14px" class="fa">&#xf153;</i>
+                                <button type="button" ng-click="count = count - silver[7];silver[7]=0" class="btn btn-danger btn-sm float-right"><i style="font-size:14px" class="fa">&#xf00d;</i> Dismiss</button></h4>
+                        </li>
+
+                        <li ng-show="silver[8]">
+                            <h4><small>Type 1</small> <strong>Electronics</strong> <small>x<strong>{{silver[8]}}</strong> Price is:</small><strong> {{(silver[8]*silverPrice[8])}}</strong><i style="font-size:14px" class="fa">&#xf153;</i>
+                                <button type="button" ng-click="count = count - silver[8];silver[8]=0" class="btn btn-danger btn-sm float-right"><i style="font-size:14px" class="fa">&#xf00d;</i> Dismiss</button></h4>
+                        </li>
+
+                        <li ng-show="silver[9]">
+                            <h4><small>Type 2</small> <strong>Electronics</strong> <small>x<strong>{{silver[9]}}</strong> Price is:</small><strong> {{(silver[9]*silverPrice[9])}}</strong><i style="font-size:14px" class="fa">&#xf153;</i>
+                                <button type="button" ng-click="count = count - silver[9];silver[9]=0" class="btn btn-danger btn-sm float-right"><i style="font-size:14px" class="fa">&#xf00d;</i> Dismiss</button></h4>
+                        </li>
+
+                        <li ng-show="silver[10]">
+                            <h4><small>Type 3</small> <strong>Electronics</strong> <small>x<strong>{{silver[10]}}</strong> Price is:</small><strong> {{(silver[10]*silverPrice[10])}}</strong><i style="font-size:14px" class="fa">&#xf153;</i>
+                                <button type="button" ng-click="count = count - silver[10];silver[10]=0" class="btn btn-danger btn-sm float-right"><i style="font-size:14px" class="fa">&#xf00d;</i> Dismiss</button></h4>
+                        </li>
+
+                        <li ng-show="silver[11]">
+                            <h4><small>Type 4</small> <strong>Electronics</strong> <small>x<strong>{{silver[11]}}</strong> Price is:</small><strong> {{(silver[11]*silverPrice[11])}}</strong><i style="font-size:14px" class="fa">&#xf153;</i>
+                                <button type="button" ng-click="count = count - silver[11];silver[11]=0" class="btn btn-danger btn-sm float-right"><i style="font-size:14px" class="fa">&#xf00d;</i> Dismiss</button></h4>
+                        </li>
+
+
+                        <li ng-show="silver[12]">
+                            <h4><small>Type 1</small> <strong>Silver Vessel</strong> <small>x<strong>{{silver[12]}}</strong> Price is:</small><strong> {{(silver[12]*silverPrice[12])}}</strong><i style="font-size:14px" class="fa">&#xf153;</i>
+                                <button type="button" ng-click="count = count - silver[12];silver[12]=0" class="btn btn-danger btn-sm float-right"><i style="font-size:14px" class="fa">&#xf00d;</i> Dismiss</button></h4>
+                        </li>
+
+                        <li ng-show="silver[13]">
+                            <h4><small>Type 2</small> <strong>Silver Vessel</strong> <small>x<strong>{{silver[13]}}</strong> Price is:</small><strong> {{(silver[13]*silverPrice[13])}}</strong><i style="font-size:14px" class="fa">&#xf153;</i>
+                                <button type="button" ng-click="count = count - silver[13];silver[13]=0" class="btn btn-danger btn-sm float-right"><i style="font-size:14px" class="fa">&#xf00d;</i> Dismiss</button></h4>
+                        </li>
+
+                        <li ng-show="silver[14]">
+                            <h4><small>Type 3</small> <strong>Silver Vessel</strong> <small>x<strong>{{silver[14]}}</strong> Price is:</small><strong> {{(silver[14]*silverPrice[14])}}</strong><i style="font-size:14px" class="fa">&#xf153;</i>
+                                <button type="button" ng-click="count = count - silver[14];silver[14]=0" class="btn btn-danger btn-sm float-right"><i style="font-size:14px" class="fa">&#xf00d;</i> Dismiss</button></h4>
+                        </li>
+
+                        <li ng-show="silver[15]">
+                            <h4><small>Type 4</small> <strong>Silver Vessel</strong> <small>x<strong>{{silver[15]}}</strong> Price is:</small><strong> {{(silver[15]*silverPrice[15])}}</strong><i style="font-size:14px" class="fa">&#xf153;</i>
+                                <button type="button" ng-click="count = count - silver[15];silver[15]=0" class="btn btn-danger btn-sm float-right"><i style="font-size:14px" class="fa">&#xf00d;</i> Dismiss</button></h4>
+                        </li>
+
+
+
+                        <li ng-show="silver[16]">
+                            <h4><small>Type 1</small> <strong>Silver Jewlery</strong> <small>x<strong>{{silver[16]}}</strong> Price is:</small><strong> {{(silver[16]*silverPrice[16])}}</strong><i style="font-size:14px" class="fa">&#xf153;</i>
+                                <button type="button" ng-click="count = count - silver[16];silver[16]=0" class="btn btn-danger btn-sm float-right"><i style="font-size:14px" class="fa">&#xf00d;</i> Dismiss</button></h4>
+                        </li>
+
+                        <li ng-show="silver[17]">
+                            <h4><small>Type 2</small> <strong>Silver Jewlery</strong> <small>x<strong>{{silver[17]}}</strong> Price is:</small><strong> {{(silver[17]*silverPrice[17])}}</strong><i style="font-size:14px" class="fa">&#xf153;</i>
+                                <button type="button" ng-click="count = count - silver[17];silver[17]=0" class="btn btn-danger btn-sm float-right"><i style="font-size:14px" class="fa">&#xf00d;</i> Dismiss</button></h4>
+                        </li>
+
+                        <li ng-show="silver[18]">
+                            <h4><small>Type 3</small> <strong>Silver Jewlery</strong> <small>x<strong>{{silver[18]}}</strong> Price is:</small><strong> {{(silver[18]*silverPrice[18])}}</strong><i style="font-size:14px" class="fa">&#xf153;</i>
+                                <button type="button" ng-click="count = count - silver[18];silver[18]=0" class="btn btn-danger btn-sm float-right"><i style="font-size:14px" class="fa">&#xf00d;</i> Dismiss</button></h4>
+                        </li>
+
+                        <li ng-show="silver[19]">
+                            <h4><small>Type 4</small> <strong>Silver Jewlery</strong> <small>x<strong>{{silver[19]}}</strong> Price is:</small><strong> {{(silver[19]*silverPrice[19])}}</strong><i style="font-size:14px" class="fa">&#xf153;</i>
+                                <button type="button" ng-click="count = count - silver[19];silver[19]=0" class="btn btn-danger btn-sm float-right"><i style="font-size:14px" class="fa">&#xf00d;</i> Dismiss</button></h4>
+                        </li>
+                    </ol>
+                    <h4 ng-show="coppSum() + steelSum() + silverSum()"><strong>Total Price in <i style="font-size:24px" class="fa">&#xf153;</i> </strong>
+                        <div ng-bind="coppSum() + steelSum() + silverSum()"></div>
+                    </h4>
+                    <br>
+                    <label ng-show="coppSum() + steelSum() + silverSum()" for="addressMOJ">Your Address:</label>
+                    <input ng-show="coppSum() + steelSum() + silverSum()" type="text" class="form-control" id="addressMOJ">
+                    <br>
+                    <label ng-show="coppSum() + steelSum() + silverSum()" for="telMOJ">Your Telephone:</label>
+                    <input ng-show="coppSum() + steelSum() + silverSum()" type="text" class="form-control" id="telMOJ">
+                    <br>
+                    <label ng-show="coppSum() + steelSum() + silverSum()" for="termsMOJ">I read <a href="#">terms of services</a></label>
+                    <input ng-show="coppSum() + steelSum() + silverSum()" type="checkbox" id="termsMOJ">
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <div class="row">
+                        <div class="col-md-12"> <button ng-show="coppSum() + steelSum() + silverSum()" type="button" style="width: 150px" class="btn btn-success float-right "><i style="font-size:24px" class="fa">&#xf0d1;</i> Order Now</button></div>
+                        <div class="col-md-12"><br></div>
+                        <div class="col-md-12"><button type="button" class="btn btn-warning float-right" data-dismiss="modal">Close</button></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="iksic.js"></script>
+    <script src="angularJS.js"></script>
+
+</body>
+
+</html>

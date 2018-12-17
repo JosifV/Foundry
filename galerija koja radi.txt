@@ -1,0 +1,59 @@
+    <!-- GALLERY -->
+    <div id="galerijaMOJ" class="container-fluid">
+        <br><br>
+        <div id="demo" class="carousel slide" data-ride="carousel">
+            <ul class="carousel-indicators">
+                <li data-target="#demo" data-slide-to="0" class="active"></li>
+                <li data-target="#demo" data-slide-to="1"></li>
+                <li data-target="#demo" data-slide-to="2"></li>
+                <li data-target="#demo" data-slide-to="3"></li>
+                <li data-target="#demo" data-slide-to="4"></li>
+                <li data-target="#demo" data-slide-to="5"></li>
+            </ul>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="img-fluid" src="mjed2.jpg" alt="Copper" width="100%" height="500">
+                    <div class="carousel-caption">
+                        <h3>Copper</h3>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="img-fluid" src="mjed.jpg" alt="Metal" width="100%" height="500">
+                    <div class="carousel-caption">
+                        <h3>Metal</h3>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="img-fluid" src="tal.jpg" alt="Steel" width="100%" height="500">
+                    <div class="carousel-caption">
+                        <h3>Steel</h3>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="img-fluid" src="tal2.jpg" alt="Ore" width="100%" height="500">
+                    <div class="carousel-caption">
+                        <h3>Ore</h3>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="img-fluid" src="srebro.jpg" alt="Silver" width="100%" height="500">
+                    <div class="carousel-caption">
+                        <h3>Silver</h3>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="img-fluid" src="srebro2.jpg" alt="Metal" width="100%" height="500">
+                    <div class="carousel-caption">
+                        <h3>Metal</h3>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+        <br><br>
+    </div>

@@ -1,0 +1,48 @@
+        <!-- COPPER -->
+        <div class="row">
+            <div class="col-md-12">
+                <div class="dropdown dropright">
+                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+          Copper Products
+        </button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Copper Wire</a>
+                        <a class="dropdown-item" href="#">Copper Sheet</a>
+                        <a class="dropdown-item" href="#">Copper Castings</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- STEEL -->
+        <div class="row">
+            <div class="col-md-12">
+                <div class="dropdown dropright">
+                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                  Steel Products
+                </button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Link 1</a>
+                        <a class="dropdown-item" href="#">Link 2</a>
+                        <a class="dropdown-item" href="#">Link 3</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- SILVER -->
+        <div class="row">
+            <div class="col-md-12">
+                <div class="dropdown dropright">
+                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                  Silver Castings
+                </button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Link 1</a>
+                        <a class="dropdown-item" href="#">Link 2</a>
+                        <a class="dropdown-item" href="#">Link 3</a>
+                    </div>
+                </div>
+            </div>
+        </div>

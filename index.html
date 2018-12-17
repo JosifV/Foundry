@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="stil/css/main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+</head>
+
+<body onload="shoW()">
+    <div id="predloadac">
+        <i class="fa fa-gear fa-spin d-flex justify-content-center" style="font-size:104px;padding: 150px"></i>
+        <h1>Page is loading - this may take a second</h1>
+    </div>
+    <div style="display: none" id="hideAll">
+        <!-- NAVBAR -->
+        <nav id="navMOJ" class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <a class="navbar-brand" href="index.html"><i style="font-size:24px" class="fa">&#xf015;</i></a>
+            <button class="navbar-toggler container2" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" onclick="xFunc(this)">
+               
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </button>
+
+            <div id="navbarNavDropdown" class="navbar-collapse collapse">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="beginnings.html">Beginnings</a>
+                    </li>
+                    <li class=" dropdown">
+                        <a class="nav-link " href="pricing.html"> Pricing & Orders </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="workers.html">Our workers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Connect with us</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav">
+                    <li class=" dropdown nav-item">
+                        <a class="nav-link dropbtn " href="" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Language <i style="font-size:24px" class="fa">&#xf0dd;</i></a>
+                        <div class=" dropdown-content" aria-labelledby="navbarDropdownMenuLink">
+                            <a id="hoverac" class="dropdown-item" href="#">Language 1</a>
+                            <a class="dropdown-item" href="#">Language 2</a>
+                            <a class="dropdown-item" href="#">Language 3</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn download">Download App</button>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- JUMBOTRON -->
+        <section id="banner">
+            <div class="inner">
+                <h1>Our Foundry</h1>
+                <h3>At vero eos et accusamus et iusto odio dignissimos <strong> <a href="#">ducimus qui blanditiis</a></strong> <br />At vero eos et ducimus qui blanditiis <br /> praesentium sint occaecati cupiditate non provident, similique sunt in culpa
+                    qui officia deserunt</h3>
+            </div>
+            <video autoplay loop muted playsinline src="sve1.mp4"></video>
+
+        </section>
+        <!-- ABOUT US -->
+        <div id="aboutMOJ" class="container-fluid">
+            <br><br>
+            <h3>Heading</h3>
+            <br>
+            <p>Donec quis libero metus. Phasellus sit amet libero condimentum, faucibus nisi vitae, facilisis elit. Integer lacinia nisi quis lacus imperdiet lobortis. Curabitur in tristique felis. Fusce ipsum nisi, gravida vel blandit vel, scelerisque in
+                tortor. Morbi tincidunt mauris commodo sagittis egestas. Praesent ultrices ligula <a href="#">eu ex imperdiet</a>, a venenatis quam gravida. Suspendisse mollis, lorem id ornare consequat, justo magna egestas tortor, sit amet lobortis augue
+                nisi ac mi. Aliquam interdum enim eu lorem tempus volutpat. Integer quis sapien a <a href="#">ex tincidunt ornare</a>. Nullam fermentum, lorem a vehicula lobortis, tortor sapien aliquet ipsum, nec sodales risus magna ac ligula. Phasellus
+                eget est ac diam varius consectetur id nec leo.
+            </p>
+            <br>
+        </div>
+
+        <!-- GALLERY -->
+        <div id="galerijaMOJ" class="container-fluid">
+            <div class="container">
+                <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+                <img id="expandedImg" style="width:100%">
+                <div id="imgtext"></div>
+            </div>
+            <!-- The four columns -->
+            <div class="row">
+                <div class="column">
+                    <img src="mjed.jpg" alt="Copper" style="width:100%" onclick="myFunction(this);">
+                </div>
+                <div class="column">
+                    <img src="mjed2.jpg" alt="Copper" style="width:100%" onclick="myFunction(this);">
+                </div>
+                <div class="column">
+                    <img src="srebro2.jpg" alt="Silver" style="width:100%" onclick="myFunction(this);">
+                </div>
+                <div class="column">
+                    <img src="tal.jpg" alt="Steel" style="width:100%" onclick="myFunction(this);">
+                </div>
+                <div class="column">
+                    <img src="srebro.jpg" alt="Silver" style="width:100%" onclick="myFunction(this);">
+                </div>
+                <div class="column">
+                    <img src="tal2.jpg" alt="Steel" style="width:100%" onclick="myFunction(this);">
+                </div>
+                <div class="column">
+                    <img src="lanac.jpg" alt="Steel" style="width:100%" onclick="myFunction(this);">
+                </div>
+                <div class="column">
+                    <img src="mine.jpg" alt="Mine" style="width:100%" onclick="myFunction(this);">
+                </div>
+            </div>
+        </div>
+
+        <!-- COUNTER -->
+        <div id="brojMOJ" class="container-fluid text-center section4">
+            <div class="row slideanim">
+                <div class="col-md-4 counter-section"><br><i style="font-size:34px" class="fa">&#xf24e;</i><br>
+                    <span class="c-section4">78550 </span>
+                    <p>Milion tones of ore digged</p>
+                </div>
+                <div class="col-md-4 counter-section"><br><i style="font-size:34px" class="fa">&#xf013;</i><br>
+                    <span class="c-section4">47000 </span>
+                    <p>Industrial shipments</p>
+                </div>
+                <div class="col-md-4 counter-section"><br><i style="font-size:34px" class="fa">&#xf0c0;</i><br>
+                    <span class="c-section4">14000 </span>
+                    <p>Employees & their family members</p>
+                </div>
+            </div>
+        </div>
+        <!-- SOMETHING ELSE -->
+        <div id="aboutMOJ" class="container-fluid">
+            <br><br>
+            <h3>Something else</h3>
+            <br>
+            <p>Donec quis libero metus. Phasellus sit amet libero condimentum, faucibus nisi vitae, facilisis elit. Integer lacinia nisi quis lacus imperdiet lobortis. Curabitur in tristique felis. Fusce ipsum nisi, gravida vel blandit vel, scelerisque in
+                tortor. Morbi tincidunt mauris commodo sagittis egestas. Praesent ultrices ligula, a venenatis quam gravida. Suspendisse mollis, lorem id ornare consequat, justo magna egestas tortor, sit amet lobortis augue nisi ac mi. Aliquam interdum
+                enim eu lorem tempus volutpat. Integer quis sapien. Nullam fermentum, lorem a vehicula lobortis, tortor sapien aliquet ipsum, nec sodales risus magna ac ligula. Phasellus eget est ac diam varius consectetur id nec leo.
+            </p>
+            <br>
+        </div>
+
+        <!-- FAST CONNTACT -->
+        <div class="row">
+            <div class="col-md-12"><button id="contactMOJ" type="button" class="btn btn-block" data-toggle="modal" data-target="#myModal"><h2><i class="fa fa-pencil-square-o" style="font-size:36px"></i> Connect with us <strong>FAST</strong></h2></button></div>
+        </div>
+        <!-- The Modal -->
+        <div class="modal" id="myModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h4 class="modal-title">Connect with us <strong>FAST</strong></h4>
+                        <button id="zatvori" type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        <label for="emailac">Your email</label><br>
+                        <input type="email" class="form-control" id="emailac"><br>
+
+                        <label for="textac">Write us a message</label>
+                        <textarea class="form-control" style="resize: none; width: 100%" name="" id="textac" cols="30" rows="10"></textarea><br>
+
+                    </div>
+
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                        <button type="submit" id="fast" class="btn btn-block "><strong>Send</strong></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="tabImg.js"></script>
+    <script src="iksic.js"></script>
+    <script src="main.js"></script>
+    <script src="skrol.js"></script>
+    <script type="text/javascript">
+        function shoW() {
+            document.getElementById("hideAll").style.display = "block";
+            document.getElementById("predloadac").style.display = "none";
+        }
+    </script>
+</body>
+
+</html>
